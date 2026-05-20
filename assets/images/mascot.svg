@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Headphones band -->
+  <path d="M12 30 Q12 12 32 12 Q52 12 52 30" stroke="#0A4FCC" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Left ear cup outer -->
+  <rect x="7" y="27" width="10" height="13" rx="5" fill="#0A4FCC"/>
+  <!-- Left ear cup inner -->
+  <rect x="8.5" y="28.5" width="7" height="10" rx="3.5" fill="#1A6AFF"/>
+  <!-- Right ear cup outer -->
+  <rect x="47" y="27" width="10" height="13" rx="5" fill="#0A4FCC"/>
+  <!-- Right ear cup inner -->
+  <rect x="48.5" y="28.5" width="7" height="10" rx="3.5" fill="#1A6AFF"/>
+  <!-- Robot body/head outer shell -->
+  <ellipse cx="32" cy="37" rx="19" ry="17" fill="white" stroke="#E0E8F8" stroke-width="1"/>
+  <!-- Face screen dark -->
+  <ellipse cx="32" cy="37" rx="14" ry="12" fill="#0C0E1A"/>
+  <!-- Left eye -->
+  <ellipse cx="25.5" cy="35" rx="4.5" ry="5.5" fill="#00BFFF"/>
+  <!-- Left eye shine -->
+  <ellipse cx="27" cy="33" rx="1.5" ry="2" fill="white" opacity="0.8"/>
+  <!-- Right eye -->
+  <ellipse cx="38.5" cy="35" rx="4.5" ry="5.5" fill="#00BFFF"/>
+  <!-- Right eye shine -->
+  <ellipse cx="40" cy="33" rx="1.5" ry="2" fill="white" opacity="0.8"/>
+  <!-- Smile -->
+  <path d="M25.5 42 Q32 47 38.5 42" stroke="#00BFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- Microphone arm -->
+  <path d="M17 38 L11 43" stroke="#1C2240" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Mic capsule outer -->
+  <circle cx="10" cy="44" r="3" fill="#0A4FCC"/>
+  <!-- Mic capsule inner -->
+  <circle cx="10" cy="44" r="1.8" fill="#1A6AFF"/>
+</svg>
