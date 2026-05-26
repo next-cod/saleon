@@ -86,7 +86,7 @@ const T = {
     'pricing.opt.self.label':    'Самостоятельно',
     'pricing.opt.self.desc':     'Настройте сами по шаблону - платите только тариф. Без доплат за внедрение.',
     'pricing.opt.turnkey.label': 'Под ключ',
-    'pricing.opt.turnkey.desc':  'Мы настраиваем за вас - от брифа до запуска за 3 дня. Оплата: 50% до старта, 50% после.',
+    'pricing.opt.turnkey.desc':  'Берём всё на себя: разбираемся в вашем бизнесе, настраиваем характер, сценарии и логику бота. Вы просто рассказываете - мы делаем.',
     'pricing.note':     'Больше 100 обращений в день - 1 руб. за сообщение. Напишите, рассчитаем.',
 
     'team.title':     'Кто делает Saleon',
@@ -266,7 +266,7 @@ const T = {
     'pricing.opt.self.label':    'Self-setup',
     'pricing.opt.self.desc':     'Set it up yourself using our template - pay only the monthly fee. No setup fee.',
     'pricing.opt.turnkey.label': 'Done for you',
-    'pricing.opt.turnkey.desc':  'We set everything up - from brief to launch in 3 days. Payment: 50% upfront, 50% after launch.',
+    'pricing.opt.turnkey.desc':  'We handle everything: understand your business, configure the personality, scenarios and logic. You just tell us - we take care of the rest.',
     'pricing.note':     'More than 100 requests/day - 1 rub per message. Write to us for a quote.',
 
     'team.title':     'Who makes Saleon',
