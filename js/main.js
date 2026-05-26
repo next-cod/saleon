@@ -83,9 +83,10 @@ const T = {
     'plan3.support': 'Приоритетная поддержка',
     'plan.support':  'Поддержка в рабочее время',
 
-    'pricing.impl.pre': 'Настройка под ключ - ',
-    'pricing.impl.pay': 'Оплата: 50% до старта, 50% после запуска.',
-    'pricing.impl.alt': 'Или настройте сами по шаблону - оплачивается только тариф.',
+    'pricing.opt.self.label':    'Самостоятельно',
+    'pricing.opt.self.desc':     'Настройте сами по шаблону - платите только тариф. Без доплат за внедрение.',
+    'pricing.opt.turnkey.label': 'Под ключ',
+    'pricing.opt.turnkey.desc':  'Мы настраиваем за вас - от брифа до запуска за 3 дня. Оплата: 50% до старта, 50% после.',
     'pricing.note':     'Больше 100 обращений в день - 1 руб. за сообщение. Напишите, рассчитаем.',
 
     'team.title':     'Кто делает Saleon',
@@ -262,9 +263,10 @@ const T = {
     'plan3.support': 'Priority support',
     'plan.support':  'Business hours support',
 
-    'pricing.impl.pre': 'Full setup - ',
-    'pricing.impl.pay': 'Payment: 50% upfront, 50% after launch.',
-    'pricing.impl.alt': 'Or set up yourself with a template - pay only the monthly fee.',
+    'pricing.opt.self.label':    'Self-setup',
+    'pricing.opt.self.desc':     'Set it up yourself using our template - pay only the monthly fee. No setup fee.',
+    'pricing.opt.turnkey.label': 'Done for you',
+    'pricing.opt.turnkey.desc':  'We set everything up - from brief to launch in 3 days. Payment: 50% upfront, 50% after launch.',
     'pricing.note':     'More than 100 requests/day - 1 rub per message. Write to us for a quote.',
 
     'team.title':     'Who makes Saleon',
@@ -506,7 +508,7 @@ var HERO_CHATS = [
   { // ПАДИК
     msgs: [
       { who:'in', text:'Привет, хочу попробовать падел. Я вообще новичок' },
-      { who:'out', text:'Дружище, это лучшее решение! Падел — самый быстро усваиваемый вид спорта. Уже через час будешь рубиться. Есть пробный слот завтра в 18:00 - залетай!' },
+      { who:'out', text:'Дружище, это лучшее решение! Падел - самый быстро усваиваемый вид спорта. Уже через час будешь рубиться. Есть пробный слот завтра в 18:00 - залетай!' },
       { who:'in', text:'А ракетку нужно своё брать?' },
       { who:'out', text:'Нет, у нас всё есть - ракетки, мячи, аренда обуви. Просто приходи и играй. Записать тебя на завтра?' },
     ],
@@ -551,8 +553,8 @@ var HERO_CHATS = [
   { // МАКС
     msgs: [
       { who:'in', text:'Сколько стоит абонемент?' },
-      { who:'out', text:'Чемпион, привет! Месячный — 2900, три месяца — 6900, годовой — 19900. Но сначала рекомендую пробное занятие — бесплатно. Посмотришь зал, познакомишься с тренером.' },
-      { who:'in', text:'Пробное — это как? Нужно что-то приносить?' },
+      { who:'out', text:'Чемпион, привет! Месячный - 2900, три месяца - 6900, годовой - 19900. Но сначала рекомендую пробное занятие - бесплатно. Посмотришь зал, познакомишься с тренером.' },
+      { who:'in', text:'Пробное - это как? Нужно что-то приносить?' },
       { who:'out', text:'Только себя и хорошее настроение! Форма и полотенце есть в прокате. Когда удобно прийти - утром или вечером?' },
     ],
     chips: ['Утром', 'Вечером', 'Купить абонемент сразу'],
@@ -761,10 +763,7 @@ function initCasesCarousel() {
   var isDragging = false;
 
   function getVisible() {
-    var w = track.parentElement.offsetWidth;
-    if (w < 600) return 1;
-    if (w < 900) return 2;
-    return 3;
+    return 1;
   }
 
   function maxIdx() { return Math.max(0, items.length - getVisible()); }
