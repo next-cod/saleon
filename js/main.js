@@ -27,16 +27,18 @@ const T = {
     'pain.p1.desc':     'Клиент написал в 23:00 - менеджер увидит утром. К тому времени он уже купил у конкурента.',
     'pain.p2.title':    '80% вопросов одинаковые',
     'pain.p2.desc':     'Цена, условия, как записаться - менеджер отвечает на одно и то же по кругу. Вместо продаж.',
-    'pain.p3.title':    'Обычный бот не различает клиентов',
-    'pain.p3.desc':     'Холодному и горячему - один и тот же ответ. Горячий чувствует равнодушие и уходит.',
-    'pain.p4.title':    'Настроили бот - он не продаёт',
-    'pain.p4.desc':     'Купили, подключили, разочаровались. "Боты не работают" - нет, просто у них нет характера и логики.',
-    'pain.p5.title':    'Живой менеджер стоит дорого',
-    'pain.p5.desc':     'Нанять - дорого. Обучить - долго. Один не справляется с потоком. А в отпуске кто?',
+    'pain.p3.title':    'Менеджер выгорает от рутины',
+    'pain.p3.desc':     'Каждый день одни и те же вопросы. Хороший продавец начинает халтурить, потом уходит - и надо всё начинать заново.',
+    'pain.p4.title':    'Настроили бот - не продаёт',
+    'pain.p4.desc':     'Купили, подключили, разочаровались. Дело не в ботах - дело в том, что у них нет характера и понимания клиента.',
+    'pain.p5.title':    'Живой менеджер - дорого и нестабильно',
+    'pain.p5.desc':     'Нанять - дорого. Обучить - долго. Заболел, в отпуске, уволился - бизнес встаёт. Один точно не справится с потоком.',
+    'pain.p6.title':    'Бот не различает клиентов',
+    'pain.p6.desc':     'Холодному и горячему - один и тот же ответ. Горячий клиент чувствует равнодушие и уходит к конкуренту.',
     'pain.bridge':      'Сэйлон создаёт цифровых сотрудников с характером. Они понимают, на каком этапе находится клиент - и отвечают точно под момент.',
 
     'personas.eyebrow':       'КАК РАБОТАЕТ СЭЙЛОН',
-    'personas.title':         'Бот знает, где сейчас ваш клиент',
+    'personas.title':         'Бот знает, что происходит с вашим клиентом',
     'personas.subtitle':      'Выберите персонажа и состояние - посмотрите, как бот с характером отвечает в нужный момент.',
     'personas.choose.bot':    'ВЫБЕРИТЕ ПЕРСОНАЖА',
     'personas.choose.state':  'СОСТОЯНИЕ КЛИЕНТА',
@@ -95,7 +97,7 @@ const T = {
     'team.i.role':    'Технический директор. Программирует с 12 лет.',
     'team.i.caption': 'Технический директор',
     'team.d.name':    'Дима',
-    'team.d.role':    'Дизайнер и разработчик. 17 лет. Сайты и визуал.',
+    'team.d.role':    'Дизайнер и разработчик. Сайты и визуал. 17 лет.',
     'team.d.caption': 'Дизайнер и разработчик',
     'team.a.name':    'Арина',
     'team.a.role':    'Архитектор клиентского пути. Прописывает сценарии бота.',
@@ -156,6 +158,7 @@ const T = {
     'footer.faq':          'FAQ',
     'footer.privacy':      'Политика конфиденциальности',
     'footer.offer':        'Публичная оферта',
+    'footer.license':      'Лицензионный договор',
 
     'popup.title':  'Придумаем имя вашему боту?',
     'popup.text':   'Бесплатный созвон 30 минут - покажем как это работает в вашей нише.',
@@ -203,16 +206,18 @@ const T = {
     'pain.p1.desc':     'A client messaged at 11 PM - the manager sees it in the morning. By then they bought from a competitor.',
     'pain.p2.title':    '80% of questions are the same',
     'pain.p2.desc':     'Price, terms, how to book - the manager answers the same thing over and over. Instead of selling.',
-    'pain.p3.title':    'Regular bots treat all customers the same',
-    'pain.p3.desc':     'Cold and hot leads get the same response. Hot leads feel the indifference and leave.',
-    'pain.p4.title':    'Bought a bot - it doesn\'t sell',
-    'pain.p4.desc':     '"Bots don\'t work" - no, they just have no personality or logic.',
-    'pain.p5.title':    'A real manager is expensive',
-    'pain.p5.desc':     'Hire - expensive. Train - takes time. Who covers vacation?',
+    'pain.p3.title':    'Managers burn out from routine',
+    'pain.p3.desc':     'The same questions every day. A good salesperson starts to slack, then leaves - and you start all over again.',
+    'pain.p4.title':    'Set up a bot - it doesn\'t sell',
+    'pain.p4.desc':     'Bought it, connected it, disappointed. The problem isn\'t bots - it\'s that they have no personality or understanding of the client.',
+    'pain.p5.title':    'A real manager is costly and unstable',
+    'pain.p5.desc':     'Hire - costly. Train - time-consuming. Sick, on vacation, quit - business stops. One can\'t handle the load.',
+    'pain.p6.title':    'The bot treats all clients the same',
+    'pain.p6.desc':     'Cold and hot leads get the same response. Hot leads feel the indifference and leave to a competitor.',
     'pain.bridge':      'Saleon creates digital staff with personality. They understand where the client is in the journey - and respond at exactly the right moment.',
 
     'personas.eyebrow':       'HOW SALEON WORKS',
-    'personas.title':         'The bot knows where your client is right now',
+    'personas.title':         'The bot knows what\'s happening with your client',
     'personas.subtitle':      'Choose a character and client state - see how a bot with personality responds at the right moment.',
     'personas.choose.bot':    'CHOOSE A CHARACTER',
     'personas.choose.state':  'CLIENT STATE',
@@ -332,6 +337,7 @@ const T = {
     'footer.faq':          'FAQ',
     'footer.privacy':      'Privacy policy',
     'footer.offer':        'Public offer',
+    'footer.license':      'License agreement',
 
     'popup.title':  'Let\'s name your bot?',
     'popup.text':   'Free 30-minute call - we\'ll show how it works in your niche.',
@@ -485,6 +491,151 @@ const STATES = [
 ];
 
 /* ============================================================
+   HERO CHAT DATA (7 bots)
+============================================================ */
+var HERO_CHATS = [
+  { // СЭМ
+    msgs: [
+      { who:'in', text:'Привет! Хочу арендовать студию для съемки, что есть?' },
+      { who:'out', text:'Привет, красотка! У нас два зала: белый циклорама и тёмный loft. Расскажи, что снимаем - подберу свет и время!' },
+      { who:'in', text:'Портрет, хочу что-нибудь атмосферное' },
+      { who:'out', text:'Тогда точно loft - там мягкое боковое освещение, идеально для портрета. Завтра есть 14:00 или 17:30. Бронируем?' },
+    ],
+    chips: ['Сколько стоит?', 'Посмотреть фото зала', 'Другое время'],
+  },
+  { // ПАДИК
+    msgs: [
+      { who:'in', text:'Привет, хочу попробовать падел. Я вообще новичок' },
+      { who:'out', text:'Дружище, это лучшее решение! Падел — самый быстро усваиваемый вид спорта. Уже через час будешь рубиться. Есть пробный слот завтра в 18:00 - залетай!' },
+      { who:'in', text:'А ракетку нужно своё брать?' },
+      { who:'out', text:'Нет, у нас всё есть - ракетки, мячи, аренда обуви. Просто приходи и играй. Записать тебя на завтра?' },
+    ],
+    chips: ['Да, записать!', 'Другое время', 'Цены'],
+  },
+  { // ГЛАША
+    msgs: [
+      { who:'in', text:'Добрый день! Нужен букет на день рождения подруге' },
+      { who:'out', text:'Дорогая, какая хорошая идея! Расскажи немного о подруге - какой она человек, есть ли любимые цветы? Подберу букет с характером, а не просто набор цветов.' },
+      { who:'in', text:'Она любит что-то нежное, пастельные тона' },
+      { who:'out', text:'Тогда пионы и эустома в пыльно-розовом с веточками эвкалипта - это будет очень её. Бюджет примерно какой? Соберу под него.' },
+    ],
+    chips: ['До 2000 руб', 'До 3500 руб', 'Нужна доставка'],
+  },
+  { // КИРИЛЛЫЧ
+    msgs: [
+      { who:'in', text:'Здорово. Стучит что-то спереди при торможении' },
+      { who:'out', text:'Понял, друг. Скорее всего тормозные колодки или суппорт. Это не срочно, но ездить долго не стоит. Когда сможешь заехать на диагностику?' },
+      { who:'in', text:'Могу в субботу утром' },
+      { who:'out', text:'Записал тебя на субботу в 9:00. Диагностика тормозов бесплатно, займёт минут 20. Марка и модель машины?' },
+    ],
+    chips: ['Отлично, жду', 'Другое время', 'Примерная цена ремонта'],
+  },
+  { // ЛЮСЯ
+    msgs: [
+      { who:'in', text:'Привет! Хочу записаться на стрижку, есть что-нибудь на завтра?' },
+      { who:'out', text:'Подруга, привет! Конечно есть - завтра у нас открыто 11:00 и 14:30. К кому хочешь - к Насте или Ирине?' },
+      { who:'in', text:'К Насте! На 14:30' },
+      { who:'out', text:'Записала тебя к Насте на завтра в 14:30. Напомню за час до визита. До встречи!' },
+    ],
+    chips: ['Перенести запись', 'Услуги и цены', 'Адрес'],
+  },
+  { // БАРС
+    msgs: [
+      { who:'in', text:'Здравствуйте, мой кот не ест второй день, что делать?' },
+      { who:'out', text:'Здравствуй, друг. Понимаю, это тревожно. Скажи - кот вялый или активный? Пьёт воду? Это поможет понять срочность.' },
+      { who:'in', text:'Вялый, воду пьёт немного' },
+      { who:'out', text:'Рекомендую приехать сегодня - два дня без еды плюс вялость требуют осмотра. Есть время в 15:00 и 18:30. Как имя питомца?' },
+    ],
+    chips: ['Записать на 15:00', 'Записать на 18:30', 'Вызов на дом'],
+  },
+  { // МАКС
+    msgs: [
+      { who:'in', text:'Сколько стоит абонемент?' },
+      { who:'out', text:'Чемпион, привет! Месячный — 2900, три месяца — 6900, годовой — 19900. Но сначала рекомендую пробное занятие — бесплатно. Посмотришь зал, познакомишься с тренером.' },
+      { who:'in', text:'Пробное — это как? Нужно что-то приносить?' },
+      { who:'out', text:'Только себя и хорошее настроение! Форма и полотенце есть в прокате. Когда удобно прийти - утром или вечером?' },
+    ],
+    chips: ['Утром', 'Вечером', 'Купить абонемент сразу'],
+  },
+];
+
+var heroActivePill = -1;
+
+function renderHeroChat(idx) {
+  var mock = document.querySelector('.hero__chat-mock');
+  if (!mock) return;
+  var b = BOTS[idx];
+  var chat = HERO_CHATS[idx];
+
+  // header
+  var head = mock.querySelector('.hcm__head');
+  if (head) {
+    head.querySelector('.hcm__av').textContent = b.emoji;
+    head.querySelector('.hcm__av').style.background = b.color;
+    head.querySelector('.hcm__head-info strong').textContent = b.name;
+    var infoSpan = head.querySelector('.hcm__head-info span');
+    infoSpan.innerHTML = b.biz + ' &nbsp;·&nbsp; <span class="hcm__online">онлайн</span>';
+  }
+
+  // messages
+  var body = mock.querySelector('.hcm__body');
+  if (body) {
+    body.innerHTML = '';
+    chat.msgs.forEach(function(m, i) {
+      var d = document.createElement('div');
+      d.className = 'hcm__msg hcm__msg--' + m.who + ' hcm__msg--delay-' + (i + 1);
+      d.textContent = m.text;
+      body.appendChild(d);
+    });
+    // typing indicator
+    var t = document.createElement('div');
+    t.className = 'hcm__typing hcm__msg--delay-' + (chat.msgs.length + 1);
+    t.innerHTML = '<span></span><span></span><span></span>';
+    body.appendChild(t);
+  }
+
+  // chips
+  var chipsEl = mock.querySelector('.hcm__chips');
+  if (chipsEl) {
+    chipsEl.innerHTML = chat.chips.map(function(c) {
+      return '<button class="hcm__chip" style="color:' + b.color + ';border-color:' + b.color + '">' + c + '</button>';
+    }).join('');
+  }
+
+  // active pill
+  heroActivePill = idx;
+  document.querySelectorAll('.hero__bot-pill').forEach(function(p, i) {
+    var isActive = i === idx;
+    p.classList.toggle('hero__bot-pill--active', isActive);
+    if (isActive) {
+      p.style.borderColor = b.color;
+      p.style.background = b.color + '18';
+      p.style.color = b.color;
+    } else {
+      p.style.borderColor = '';
+      p.style.background = '';
+      p.style.color = '';
+    }
+  });
+}
+
+function initHeroChat() {
+  var pills = document.querySelectorAll('.hero__bot-pill');
+  if (!pills.length) return;
+  // random bot on load
+  var startIdx = Math.floor(Math.random() * BOTS.length);
+  renderHeroChat(startIdx);
+
+  pills.forEach(function(pill, i) {
+    pill.style.cursor = 'pointer';
+    pill.addEventListener('click', function() {
+      if (heroActivePill === i) return;
+      renderHeroChat(i);
+    });
+  });
+}
+
+/* ============================================================
    PERSONAS INTERACTIVE SECTION
 ============================================================ */
 var curBot = 0;
@@ -518,8 +669,9 @@ function renderBotCharDesc() {
   el.innerHTML =
     '<span class="bot-char-desc__av" style="background:' + b.color + '">' + b.emoji + '</span>' +
     '<div class="bot-char-desc__text">' +
-      '<strong>' + b.name + '</strong> - ' + b.biz +
-      '<span>' + b.char + '</span>' +
+      '<strong>' + b.name + '</strong>' +
+      '<span class="bot-char-desc__biz">- ' + b.biz + '</span>' +
+      '<span class="bot-char-desc__char">' + b.char + '</span>' +
     '</div>';
 }
 
@@ -1017,6 +1169,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initHeader();
   initLangToggle();
   initReveal();
+  initHeroChat();
   initPersonas();
   initCasesCarousel();
   initFAQ();
