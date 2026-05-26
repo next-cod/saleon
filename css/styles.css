@@ -1467,6 +1467,27 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   transition: opacity .2s, transform .2s;
 }
 .chat-widget__panel.is-hidden { opacity: 0; transform: scale(.92) translateY(8px); pointer-events: none; }
+.chat-widget__resize {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: ns-resize;
+  background: #f0f4ff;
+  border-bottom: 1px solid var(--c-border);
+  border-radius: 12px 12px 0 0;
+  flex-shrink: 0;
+  user-select: none;
+}
+.chat-widget__resize span {
+  width: 32px;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--c-text-3);
+  opacity: .5;
+  pointer-events: none;
+}
+.chat-widget__resize:hover span { opacity: .9; }
 .chat-widget__head {
   display: flex;
   align-items: center;

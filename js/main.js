@@ -911,15 +911,52 @@ var chatReplies = [
 var chatReplyIdx = 0;
 
 function initChatWidget() {
-  var trigger = document.getElementById('chatWidgetTrigger');
-  var panel   = document.getElementById('chatWidgetPanel');
-  var close   = document.getElementById('chatWidgetClose');
-  var input   = document.getElementById('chatWidgetInput');
-  var send    = document.getElementById('chatWidgetSend');
-  var body    = document.getElementById('chatWidgetBody');
-  var badge   = document.getElementById('chatWidgetBadge');
+  var trigger  = document.getElementById('chatWidgetTrigger');
+  var panel    = document.getElementById('chatWidgetPanel');
+  var close    = document.getElementById('chatWidgetClose');
+  var input    = document.getElementById('chatWidgetInput');
+  var send     = document.getElementById('chatWidgetSend');
+  var body     = document.getElementById('chatWidgetBody');
+  var badge    = document.getElementById('chatWidgetBadge');
+  var resizeH  = document.getElementById('chatWidgetResize');
 
   if (!trigger || !panel) return;
+
+  /* --- RESIZE DRAG --- */
+  if (resizeH) {
+    var resizing   = false;
+    var startY     = 0;
+    var startH     = 0;
+    var minH       = 200;
+    var maxH       = function() { return window.innerHeight - 90; };
+
+    function onResizeStart(clientY) {
+      resizing = true;
+      startY   = clientY;
+      startH   = panel.offsetHeight;
+      document.body.style.userSelect = 'none';
+      document.body.style.cursor     = 'ns-resize';
+    }
+    function onResizeMove(clientY) {
+      if (!resizing) return;
+      var delta  = startY - clientY;          // drag up = positive = taller
+      var newH   = Math.min(Math.max(startH + delta, minH), maxH());
+      panel.style.height    = newH + 'px';
+      panel.style.maxHeight = newH + 'px';
+    }
+    function onResizeEnd() {
+      resizing = false;
+      document.body.style.userSelect = '';
+      document.body.style.cursor     = '';
+    }
+
+    resizeH.addEventListener('mousedown',  function(e) { e.preventDefault(); onResizeStart(e.clientY); });
+    resizeH.addEventListener('touchstart', function(e) { onResizeStart(e.touches[0].clientY); }, { passive: true });
+    document.addEventListener('mousemove', function(e) { onResizeMove(e.clientY); });
+    document.addEventListener('touchmove', function(e) { onResizeMove(e.touches[0].clientY); }, { passive: true });
+    document.addEventListener('mouseup',   onResizeEnd);
+    document.addEventListener('touchend',  onResizeEnd);
+  }
 
   /* initial greeting */
   function addMsg(text, who) {
