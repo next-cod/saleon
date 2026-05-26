@@ -1286,8 +1286,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   transition: opacity .22s;
 }
 .team-card__photo:hover .team-card__overlay { opacity: 1; }
-.team-card__overlay strong { font-size: 14px; font-weight: 700; color: #fff; flex-shrink: 0; }
-.team-card__overlay span { font-size: 11.5px; color: rgba(255,255,255,.82); line-height: 1.5; text-align: left; }
+.team-card__overlay strong { font-size: 15px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.team-card__overlay span { font-size: 13px; color: rgba(255,255,255,.85); line-height: 1.55; text-align: left; }
 .team-card > strong { font-size: 15px; font-weight: 700; }
 .team-card > span { font-size: 13px; color: var(--c-text-3); }
 
