@@ -725,41 +725,13 @@
 
 
 <!-- ============================================================
-     CHAT WIDGET
+     CHAT TRIGGER (placeholder — подключить реальный чат)
 ============================================================ -->
-<div class="chat-widget" id="chatWidget">
-  <div class="chat-widget__panel is-hidden" id="chatWidgetPanel">
-    <div class="chat-widget__resize" id="chatWidgetResize" title="Потяни чтобы изменить размер">
-      <span></span>
-    </div>
-    <div class="chat-widget__head">
-      <div class="chat-widget__head-info">
-        <div class="chat-widget__head-avatar">
-          <img src="assets/images/mascot.svg" alt="" width="28" height="28">
-        </div>
-        <div>
-          <strong data-i18n="widget.name">Saleon Bot</strong>
-          <span>
-            <span class="online-dot"></span>
-            <span data-i18n="widget.status">онлайн</span>
-          </span>
-        </div>
-      </div>
-      <button class="chat-widget__close-btn" id="chatWidgetClose" aria-label="Закрыть">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-    <div class="chat-widget__body" id="chatWidgetBody"></div>
-    <div class="chat-widget__footer">
-      <input type="text" class="chat-widget__input" id="chatWidgetInput" data-i18n-placeholder="widget.placeholder" placeholder="Написать...">
-      <button class="chat-widget__send-btn" id="chatWidgetSend" aria-label="Отправить">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-    </div>
-  </div>
-  <button class="chat-widget__trigger" id="chatWidgetTrigger" aria-label="Написать боту" aria-expanded="false">
-    <img src="assets/images/mascot.svg" alt="" width="32" height="32">
-    <span class="chat-widget__badge" id="chatWidgetBadge">1</span>
+<div class="chat-trigger" id="chatTrigger">
+  <div class="chat-trigger__tooltip">Напишите нам</div>
+  <button class="chat-trigger__btn" id="chatTriggerBtn" aria-label="Открыть чат">
+    <img src="assets/images/mascot.svg" alt="" width="30" height="30">
+    <span class="chat-trigger__pulse"></span>
   </button>
 </div>
 

@@ -899,114 +899,17 @@ function initForm() {
 }
 
 /* ============================================================
-   CHAT WIDGET
+   CHAT TRIGGER PLACEHOLDER
+   TODO: подключить реальный чат (Next.js / Telegram / etc.)
 ============================================================ */
-var chatReplies = [
-  'Расскажите немного о вашем бизнесе - подберём подходящего персонажа.',
-  'Запуск занимает всего 3 дня. Хотите узнать, с чего начать?',
-  'Наши боты работают в Telegram, ВКонтакте и на сайте. Где чаще всего пишут ваши клиенты?',
-  'Имя и характер бота придумываете вы - мы воплощаем. Уже есть идеи?',
-  'Оставьте контакт в форме ниже - свяжемся в течение часа.',
-];
-var chatReplyIdx = 0;
-
 function initChatWidget() {
-  var trigger  = document.getElementById('chatWidgetTrigger');
-  var panel    = document.getElementById('chatWidgetPanel');
-  var close    = document.getElementById('chatWidgetClose');
-  var input    = document.getElementById('chatWidgetInput');
-  var send     = document.getElementById('chatWidgetSend');
-  var body     = document.getElementById('chatWidgetBody');
-  var badge    = document.getElementById('chatWidgetBadge');
-  var resizeH  = document.getElementById('chatWidgetResize');
-
-  if (!trigger || !panel) return;
-
-  /* --- RESIZE DRAG --- */
-  if (resizeH) {
-    var resizing   = false;
-    var startY     = 0;
-    var startH     = 0;
-    var minH       = 200;
-    var maxH       = function() { return window.innerHeight - 90; };
-
-    function onResizeStart(clientY) {
-      resizing = true;
-      startY   = clientY;
-      startH   = panel.offsetHeight;
-      document.body.style.userSelect = 'none';
-      document.body.style.cursor     = 'ns-resize';
-    }
-    function onResizeMove(clientY) {
-      if (!resizing) return;
-      var delta  = startY - clientY;          // drag up = positive = taller
-      var newH   = Math.min(Math.max(startH + delta, minH), maxH());
-      panel.style.height    = newH + 'px';
-      panel.style.maxHeight = newH + 'px';
-    }
-    function onResizeEnd() {
-      resizing = false;
-      document.body.style.userSelect = '';
-      document.body.style.cursor     = '';
-    }
-
-    resizeH.addEventListener('mousedown',  function(e) { e.preventDefault(); onResizeStart(e.clientY); });
-    resizeH.addEventListener('touchstart', function(e) { onResizeStart(e.touches[0].clientY); }, { passive: true });
-    document.addEventListener('mousemove', function(e) { onResizeMove(e.clientY); });
-    document.addEventListener('touchmove', function(e) { onResizeMove(e.touches[0].clientY); }, { passive: true });
-    document.addEventListener('mouseup',   onResizeEnd);
-    document.addEventListener('touchend',  onResizeEnd);
-  }
-
-  /* initial greeting */
-  function addMsg(text, who) {
-    var d = document.createElement('div');
-    d.className = 'chat-msg chat-msg--' + who;
-    d.textContent = text;
-    if (body) { body.appendChild(d); body.scrollTop = body.scrollHeight; }
-  }
-
-  var greeted = false;
-  function openPanel() {
-    panel.classList.remove('is-hidden');
-    panel.hidden = false;
-    trigger.setAttribute('aria-expanded', 'true');
-    if (badge) badge.style.display = 'none';
-    if (!greeted) {
-      greeted = true;
-      setTimeout(function() {
-        addMsg('Привет! Я помогу узнать больше о Сэйлоне. Какой бот нужен вашему бизнесу?', 'bot');
-      }, 300);
-    }
-    if (input) input.focus();
-  }
-  function closePanel() {
-    panel.classList.add('is-hidden');
-    trigger.setAttribute('aria-expanded', 'false');
-  }
-
-  trigger.addEventListener('click', function() {
-    panel.classList.contains('is-hidden') ? openPanel() : closePanel();
-  });
-  if (close) close.addEventListener('click', closePanel);
-
-  function sendMsg() {
-    if (!input) return;
-    var text = input.value.trim();
-    if (!text) return;
-    addMsg(text, 'user');
-    input.value = '';
-    setTimeout(function() {
-      var reply = chatReplies[chatReplyIdx % chatReplies.length];
-      chatReplyIdx++;
-      addMsg(reply, 'bot');
-    }, 700);
-  }
-
-  if (send) send.addEventListener('click', sendMsg);
-  if (input) {
-    input.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
+  /* placeholder — реальный чат подключается отдельно */
+  var btn = document.getElementById('chatTriggerBtn');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      /* TODO: открыть реальный чат */
+      var anchor = document.getElementById('contacts');
+      if (anchor) anchor.scrollIntoView({ behavior: 'smooth' });
     });
   }
 }
