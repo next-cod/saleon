@@ -13,7 +13,7 @@ const T = {
     'nav.contacts':  'Контакты',
     'nav.cta':       'Попробовать',
 
-    'hero.eyebrow':      'Цифровые сотрудники с характером',
+    'hero.eyebrow':      'Сэйлон – ИИ-Продавец',
     'hero.title':        'Познакомьтесь -<br>это ваш новый<br>сотрудник.',
     'hero.lead':         'У него есть имя, характер и один единственный режим: работать. Не уволится, не заболеет, не нагрубит клиенту в пятницу вечером.',
     'hero.cta1':         'Познакомиться с Сэйлоном',
@@ -37,7 +37,7 @@ const T = {
     'pain.p6.desc':     'Холодному и горячему - один и тот же ответ. Горячий клиент чувствует равнодушие и уходит к конкуренту.',
     'pain.bridge':      'Сэйлон создаёт цифровых сотрудников с характером. Они понимают, на каком этапе находится клиент - и отвечают точно под момент.',
 
-    'personas.eyebrow':       'КАК РАБОТАЕТ СЭЙЛОН',
+    'personas.eyebrow':       'Как работает Сэйлон?',
     'personas.title':         'Бот знает, что происходит с вашим клиентом',
     'personas.subtitle':      'Выберите персонажа и состояние - посмотрите, как бот с характером отвечает в нужный момент.',
     'personas.choose.bot':    'ВЫБЕРИТЕ ПЕРСОНАЖА',
@@ -531,6 +531,16 @@ var HERO_CHATS = [
       { who:'out', text:'Тогда точно loft - там мягкое боковое освещение, идеально для портрета. Завтра есть 14:00 или 17:30. Бронируем?' },
     ],
     chips: ['Сколько стоит?', 'Посмотреть фото зала', 'Другое время'],
+    chipReplies: {
+      'Сколько стоит?': 'Час аренды — 2500 руб. Если нужна команда для съёмки, добавим 1000 руб. Для постоянных клиентов скидка 15%.',
+      'Посмотреть фото зала': 'Конечно! Все фото есть в нашем Telegram-канале @sam_studio. Там же актуальное расписание.',
+      'Другое время': 'Есть слоты: сегодня 19:00, послезавтра 10:00 и 15:00. Какой подходит?',
+    },
+    chipRepliesEn: {
+      'How much?': 'One hour rental — $30. If you need a crew, add $12. Regular clients get 15% off.',
+      'View studio photos': 'Of course! All photos are in our Telegram channel @sam_studio. Schedule is there too.',
+      'Different time': 'Available: today at 7 PM, day after tomorrow at 10 AM and 3 PM. Which works?',
+    },
     msgsEn: [
       { who:'in', text:'Hi! I\'d like to rent a studio for a shoot, what\'s available?' },
       { who:'out', text:'Hey gorgeous! We have two studios: white cyclorama and dark loft. Tell me what we\'re shooting - I\'ll match the light and time!' },
@@ -547,6 +557,16 @@ var HERO_CHATS = [
       { who:'out', text:'Нет, у нас всё есть - ракетки, мячи, аренда обуви. Просто приходи и играй. Записать тебя на завтра?' },
     ],
     chips: ['Да, записать!', 'Другое время', 'Цены'],
+    chipReplies: {
+      'Да, записать!': 'Отлично! Записал тебя завтра в 18:00. Пришлю напоминание за 2 часа. Увидимся на корте!',
+      'Другое время': 'Есть слоты: в эту субботу в 10:00, воскресенье в 12:00 и 16:00. Что подходит?',
+      'Цены': 'Пробный час — 800 руб с ракеткой. Абонемент 8 часов — 5200 руб. Групповые тренировки — 600 руб/чел.',
+    },
+    chipRepliesEn: {
+      'Yes, book me!': 'Awesome! Booked you for tomorrow at 6 PM. I\'ll send a reminder 2 hours before. See you on the court!',
+      'Different time': 'Available: this Saturday at 10 AM, Sunday at 12 PM and 4 PM. Which works?',
+      'Pricing': 'Trial hour — $10 with racket. 8-hour membership — $65. Group training — $8/person.',
+    },
     msgsEn: [
       { who:'in', text:'Hi, I want to try padel. I\'m a total beginner' },
       { who:'out', text:'Buddy, best decision! Padel is the fastest sport to pick up. You\'ll be playing within an hour. Trial slot tomorrow at 6 PM - jump in!' },
@@ -563,6 +583,16 @@ var HERO_CHATS = [
       { who:'out', text:'Тогда пионы и эустома в пыльно-розовом с веточками эвкалипта - это будет очень её. Бюджет примерно какой? Соберу под него.' },
     ],
     chips: ['До 2000 руб', 'До 3500 руб', 'Нужна доставка'],
+    chipReplies: {
+      'До 2000 руб': 'Отлично! В этом бюджете сделаю нежный букет из тюльпанов и альстромерий в пастельных тонах. Будет очень атмосферно! Самовывоз или доставка?',
+      'До 3500 руб': 'Прекрасно! На 3500 соберу роскошный букет из пионов и эустомы с эвкалиптом — именно то, что описывала. Когда нужен?',
+      'Нужна доставка': 'Доставляем по городу — 300 руб. Курьер привезёт в указанное время с открыткой. Адрес и время доставки?',
+    },
+    chipRepliesEn: {
+      'Under $25': 'Perfect! In this budget I\'ll make a delicate bouquet of tulips and alstroemeria in pastel tones. Very atmospheric! Pickup or delivery?',
+      'Under $45': 'Wonderful! For $45 I\'ll create a luxurious peony and lisianthus bouquet with eucalyptus — exactly what you described. When do you need it?',
+      'Need delivery': 'We deliver citywide — $4. Courier arrives at your specified time with a card included. Address and delivery time?',
+    },
     msgsEn: [
       { who:'in', text:'Hello! I need a bouquet for a friend\'s birthday' },
       { who:'out', text:'Dear, what a lovely idea! Tell me about your friend - what kind of person is she, any favorite flowers? I\'ll put together a bouquet with personality.' },
@@ -579,6 +609,16 @@ var HERO_CHATS = [
       { who:'out', text:'Записал тебя на субботу в 9:00. Диагностика тормозов бесплатно, займёт минут 20. Марка и модель машины?' },
     ],
     chips: ['Отлично, жду', 'Другое время', 'Примерная цена ремонта'],
+    chipReplies: {
+      'Отлично, жду': 'Добро! Ждём тебя в субботу в 9:00. Адрес: ул. Механиков, 14. Позвони, если вдруг не найдёшь.',
+      'Другое время': 'Без проблем. В воскресенье есть 10:00 и 12:00, в понедельник с 8:00. Что удобнее?',
+      'Примерная цена ремонта': 'Если колодки — от 1800 руб с работой. Суппорт — от 3500 руб. Точнее скажу после диагностики, она бесплатная.',
+    },
+    chipRepliesEn: {
+      'Great, see you then': 'Perfect! See you Saturday at 9 AM. Address: 14 Mechanics St. Call if you can\'t find us.',
+      'Different time': 'No problem. Sunday has 10 AM and 12 PM, Monday from 8 AM. What works best?',
+      'Estimated repair cost': 'Brake pads — from $22 including labor. Caliper — from $45. I\'ll give exact price after the free diagnosis.',
+    },
     msgsEn: [
       { who:'in', text:'Hey. Something\'s knocking in the front when I brake' },
       { who:'out', text:'Got it, friend. Most likely brake pads or caliper. Not urgent, but don\'t drive too long. When can you come in for a check?' },
@@ -595,6 +635,16 @@ var HERO_CHATS = [
       { who:'out', text:'Записала тебя к Насте на завтра в 14:30. Напомню за час до визита. До встречи!' },
     ],
     chips: ['Перенести запись', 'Услуги и цены', 'Адрес'],
+    chipReplies: {
+      'Перенести запись': 'Конечно! Есть завтра в 11:00 и послезавтра в 10:00 и 15:00. Насте или к другому мастеру?',
+      'Услуги и цены': 'Стрижка — от 1200 руб, окрашивание — от 2500, уход — от 800. Полный прайс пришлю в Telegram. Что интересует?',
+      'Адрес': 'Мы на ул. Садовая, 23, вход со двора. Парковка бесплатная. Работаем с 9:00 до 21:00 без выходных.',
+    },
+    chipRepliesEn: {
+      'Reschedule': 'Of course! Available tomorrow at 11 AM and the day after at 10 AM and 3 PM. With Nastya or another stylist?',
+      'Services & prices': 'Haircut — from $15, coloring — from $30, treatment — from $10. Full price list in Telegram. What are you interested in?',
+      'Address': 'We\'re at 23 Garden St, enter from the courtyard. Free parking. Open 9 AM – 9 PM every day.',
+    },
     msgsEn: [
       { who:'in', text:'Hi! I\'d like to book a haircut, anything available tomorrow?' },
       { who:'out', text:'Hey friend! Of course - tomorrow we have 11:00 AM and 2:30 PM open. Who would you prefer - Nastya or Irina?' },
@@ -611,6 +661,16 @@ var HERO_CHATS = [
       { who:'out', text:'Рекомендую приехать сегодня - два дня без еды плюс вялость требуют осмотра. Есть время в 15:00 и 18:30. Как имя питомца?' },
     ],
     chips: ['Записать на 15:00', 'Записать на 18:30', 'Вызов на дом'],
+    chipReplies: {
+      'Записать на 15:00': 'Записал! Ждём вас сегодня в 15:00. Врач осмотрит кота и назначит лечение. Как зовут питомца?',
+      'Записать на 18:30': 'Отлично! Записал на 18:30. Захватите предыдущие анализы, если есть. Как зовут кота?',
+      'Вызов на дом': 'Выезжаем в пределах города, стоимость — 800 руб + стоимость осмотра. Когда удобно — сегодня или завтра? Адрес?',
+    },
+    chipRepliesEn: {
+      'Book 3:00 PM': 'Booked! See you today at 3:00 PM. The vet will examine your cat and prescribe treatment. What\'s your pet\'s name?',
+      'Book 6:30 PM': 'Great! Booked for 6:30 PM. Bring any previous test results if you have them. What\'s the cat\'s name?',
+      'Home visit': 'We do home visits within the city — $10 + exam fee. When\'s convenient — today or tomorrow? Address?',
+    },
     msgsEn: [
       { who:'in', text:'Hello, my cat hasn\'t eaten for two days, what should I do?' },
       { who:'out', text:'Hello, friend. I understand, that\'s worrying. Tell me - is the cat lethargic or active? Drinking water? This will help gauge urgency.' },
@@ -634,6 +694,16 @@ var HERO_CHATS = [
       { who:'out', text:'Just yourself and good energy! Workout clothes and towels available for rent. When\'s convenient - morning or evening?' },
     ],
     chipsEn: ['Morning', 'Evening', 'Buy membership now'],
+    chipReplies: {
+      'Утром': 'Отлично! Завтра в 8:00 тебя ждём. Форма и полотенце — в прокате. Имя для записи?',
+      'Вечером': 'Записал на завтра в 19:00. Приходи бодрым — первое занятие бесплатно!',
+      'Купить абонемент сразу': 'Уважаю решительность! Месячный — 2900 руб, три месяца — 6900. Как удобно оплатить: картой онлайн или на месте?',
+    },
+    chipRepliesEn: {
+      'Morning': 'Perfect! Tomorrow at 8:00 AM. Gear and towels are available for rent. Name for the booking?',
+      'Evening': 'Booked for tomorrow at 7:00 PM. Come energized — first session is free!',
+      'Buy membership now': 'Love the decisiveness! Monthly — $35, three months — $85. Pay online by card or in person?',
+    },
   },
 ];
 
@@ -685,11 +755,45 @@ function renderHeroChat(idx) {
 
   // chips
   var chips = (isEn && chat.chipsEn) ? chat.chipsEn : chat.chips;
+  var replies = (isEn && chat.chipRepliesEn) ? chat.chipRepliesEn : (chat.chipReplies || {});
   var chipsEl = mock.querySelector('.hcm__chips');
   if (chipsEl) {
     chipsEl.innerHTML = chips.map(function(c) {
       return '<button class="hcm__chip" style="color:' + b.color + ';border-color:' + b.color + '">' + c + '</button>';
     }).join('');
+
+    chipsEl.querySelectorAll('.hcm__chip').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var chipText = btn.textContent.trim();
+        btn.remove();
+
+        // user message
+        var userMsg = document.createElement('div');
+        userMsg.className = 'hcm__msg hcm__msg--in';
+        userMsg.textContent = chipText;
+        body.appendChild(userMsg);
+
+        // remove old typing, add new
+        var oldTyping = body.querySelector('.hcm__typing');
+        if (oldTyping) oldTyping.remove();
+        var typing = document.createElement('div');
+        typing.className = 'hcm__typing';
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        body.appendChild(typing);
+        body.scrollTop = body.scrollHeight;
+
+        // bot reply
+        var replyText = replies[chipText] || '..';
+        setTimeout(function() {
+          typing.remove();
+          var botMsg = document.createElement('div');
+          botMsg.className = 'hcm__msg hcm__msg--out';
+          botMsg.textContent = replyText;
+          body.appendChild(botMsg);
+          body.scrollTop = body.scrollHeight;
+        }, 1200);
+      });
+    });
   }
 
   // active pill

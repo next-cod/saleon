@@ -262,14 +262,14 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 
 .hero__eyebrow {
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--c-primary);
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  background: var(--c-primary-light);
-  padding: 4px 12px;
-  border-radius: 100px;
+  text-transform: none;
+  letter-spacing: 0;
+  background: none;
+  padding: 0;
+  border-radius: 0;
   margin-bottom: 16px;
 }
 .hero__title {
@@ -341,9 +341,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: 14px; font-weight: 700; color: #fff;
   flex-shrink: 0;
 }
-.hcm__head-info { flex: 1; min-width: 0; }
-.hcm__head-info strong { display: block; font-size: 14px; font-weight: 700; }
-.hcm__head-info span { font-size: 11px; color: var(--c-text-3); }
+.hcm__head-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 1px; }
+.hcm__head-info strong { display: block; font-size: 14px; font-weight: 700; line-height: 1.2; }
+.hcm__head-info span { font-size: 11px; color: var(--c-text-3); line-height: 1.2; }
 .hcm__online { color: #22C55E; font-weight: 600; }
 .hcm__platform { flex-shrink: 0; opacity: .7; display: flex; }
 
@@ -353,7 +353,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   flex-direction: column;
   gap: 8px;
   background: #F4F6FA;
-  min-height: 200px;
+  height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-shrink: 0;
 }
 .hcm__msg {
   max-width: 82%;
@@ -425,8 +428,10 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   padding: 4px 12px;
   background: transparent;
   font-family: var(--font);
-  cursor: default;
+  cursor: pointer;
+  transition: opacity .15s;
 }
+.hcm__chip:hover { opacity: .75; }
 
 /* Bot pills row below chat */
 .hero__bots-row {
@@ -598,14 +603,14 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .personas-eyebrow {
   display: inline-block;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--c-primary);
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background: var(--c-primary-light);
-  padding: 4px 12px;
-  border-radius: 100px;
+  text-transform: none;
+  letter-spacing: 0;
+  background: none;
+  padding: 0;
+  border-radius: 0;
   margin-bottom: 14px;
 }
 
@@ -1343,27 +1348,27 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .contact-info p { font-size: 16px; color: var(--c-text-2); line-height: 1.65; }
 .contact-info__note { font-size: 14px; color: var(--c-text-3); margin-top: 8px; margin-bottom: 24px; }
-.contact-author { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+.contact-author { display: flex; flex-direction: row; align-items: flex-end; gap: 16px; margin-top: 24px; }
 .contact-author__photo {
-  width: 80px; height: 80px;
-  border-radius: 16px;
+  width: 300px; height: 300px;
+  border-radius: 40px;
   background: var(--c-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(37,99,235,.22);
+  box-shadow: 0 6px 20px rgba(37,99,235,.28);
 }
 .contact-author__letter {
-  font-size: 36px;
+  font-size: 120px;
   font-weight: 700;
   color: #fff;
   line-height: 1;
   user-select: none;
 }
-.contact-author__text { display: flex; flex-direction: column; gap: 4px; }
-.contact-author__text strong { font-size: 17px; font-weight: 700; }
+.contact-author__text { display: flex; flex-direction: column; gap: 4px; padding-bottom: 4px; }
+.contact-author__text strong { font-size: 18px; font-weight: 700; }
 .contact-author__text span { font-size: 14px; color: var(--c-text-3); line-height: 1.4; }
 
 .contact-form {
@@ -1451,8 +1456,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 ===================================================== */
 .chat-trigger {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 32px;
+  right: 40px;
   z-index: 200;
   display: flex;
   align-items: center;
@@ -1477,7 +1482,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   transform: translateX(0);
 }
 .chat-trigger__btn {
-  width: 54px; height: 54px;
+  width: 64px; height: 64px;
   border-radius: 50%;
   background: var(--c-primary);
   display: flex;
