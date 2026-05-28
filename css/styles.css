@@ -24,7 +24,7 @@
   --container:   1200px;
   --header-h:    60px;
 
-  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
   --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
 }
