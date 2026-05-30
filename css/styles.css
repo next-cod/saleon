@@ -2238,13 +2238,11 @@ html, body { overflow-x: hidden; max-width: 100%; }
 /* Bot pills row: width-constrained and scrollable on all screen sizes */
 .hero__bots-row {
   width: 100%;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: visible;
   padding-bottom: 2px;
 }
-.hero__bots-row::-webkit-scrollbar { display: none; }
 .hero__bot-pill { flex-shrink: 0; }
 
 /* ─────────────────────────────────────────────────────
@@ -2532,8 +2530,14 @@ html { background: var(--s1); }
   .hero__inner  { gap: 22px; }
   .hero__chat-mock { max-width: 100%; }
 
-  /* Scroll indicator on bot pills */
-  .hero__bots-row { justify-content: flex-start; }
+  /* Bot pills: wrap to multiple lines, all visible */
+  .hero__bots-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    gap: 5px;
+  }
+  .hero__bot-pill { flex-shrink: 0; }
 
   /* State selector: 3 columns, force equal distribution */
   .state-selector { grid-template-columns: repeat(3, minmax(0, 1fr)); }
