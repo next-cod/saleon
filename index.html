@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Saleon - цифровые сотрудники с характером. ИИ-бот для бизнеса в Telegram и ВКонтакте. Запуск за 3 дня.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#090C1C">
   <meta property="og:title" content="Saleon - Цифровой сотрудник с характером">
   <meta property="og:description" content="Бот работает за вас. Не уволится, не заболеет, не нагрубит клиенту в пятницу вечером.">
   <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="assets/images/saleon-avatar.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
     <nav class="header__nav" id="headerNav" aria-label="Навигация">
       <a href="#personas"  class="header__nav-link" data-i18n="nav.features">Как работает</a>
       <a href="#pricing"   class="header__nav-link" data-i18n="nav.pricing">Тарифы</a>
-      <a href="#cases"     class="header__nav-link" data-i18n="nav.cases">Кейсы</a>
+      <a href="#faq"       class="header__nav-link">Вопросы</a>
       <a href="#contacts"  class="header__nav-link" data-i18n="nav.contacts">Контакты</a>
     </nav>
 
@@ -59,57 +59,105 @@
      1. HERO
 ============================================================ -->
 <section class="hero" id="hero">
+  <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
   <div class="container hero__inner">
 
     <div class="hero__content reveal">
       <div class="hero__eyebrow" data-i18n="hero.eyebrow">Сэйлон – ИИ-Продавец</div>
       <h1 class="hero__title" data-i18n="hero.title">
-        Познакомьтесь -<br>это ваш новый<br>сотрудник.
+        Познакомьтесь — это ваш новый <span class="hl-mark">сотрудник</span>.
       </h1>
       <p class="hero__lead" data-i18n="hero.lead">
         У него есть имя, характер и один единственный режим: работать. Не уволится, не заболеет, не нагрубит клиенту в пятницу вечером.
       </p>
       <div class="hero__actions">
         <a href="#contacts" class="btn btn--primary btn--lg" data-i18n="hero.cta1">Познакомиться с Сэйлоном</a>
-        <a href="#personas" class="btn btn--outline btn--lg">
+        <a href="#personas" class="btn btn--ghost-white btn--lg">
           <span data-i18n="hero.cta2">Посмотреть, как это работает</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
       <div class="hero__channels">
         <span class="hero__channels-label" data-i18n="hero.works">Работает в:</span>
+        <span class="hero__channel hero__channel--crm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2.4" y="4.2" width="19.2" height="15.6" rx="3.2" stroke="#2455F5" stroke-width="1.8"/>
+            <path d="M2.4 9h19.2" stroke="#2455F5" stroke-width="1.8"/>
+            <circle cx="16.6" cy="6.6" r="1" fill="#2455F5"/>
+            <circle cx="19.2" cy="6.6" r="1" fill="#2455F5"/>
+            <path d="M6 13.4h5M6 16h7.5" stroke="#2455F5" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          CRM
+        </span>
         <span class="hero__channel">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="#2AABEE"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.281c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.569-4.46c.537-.194 1.006.131.834.939z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#2AABEE"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.281c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.569-4.46c.537-.194 1.006.131.834.939z"/></svg>
           Telegram
         </span>
         <span class="hero__channel">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0077FF"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C5.29 10.675 4.938 8.977 4.938 8.6c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.736c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.78 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.745-.576.745z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#0077FF"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C5.29 10.675 4.938 8.977 4.938 8.6c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.736c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.78 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.745-.576.745z"/></svg>
           ВКонтакте
         </span>
         <span class="hero__channel">
-          <img src="assets/images/max-icon.png" width="16" height="16" alt="MAX" aria-hidden="true" style="border-radius:4px;display:block;flex-shrink:0">
+          <img src="assets/images/max-icon.png" width="14" height="14" alt="MAX" aria-hidden="true" style="border-radius:3px;display:block;flex-shrink:0">
           MAX
         </span>
         <span class="hero__channel">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="#C13584" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#C13584" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="#C13584"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="#C13584" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#C13584" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="#C13584"/></svg>
           Instagram
         </span>
       </div>
     </div>
 
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg class="hero__scroll-hint__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <path d="M11 4v14M5 12l6 7 6-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
     <div class="hero__visual reveal reveal--delay" aria-hidden="true">
+
+      <div class="scribble scribble--hero">
+        <span class="scribble__text" data-i18n="scribble.hero">отвечает за 3 секунды,<br>даже ночью</span>
+        <svg class="scribble__arrow" width="34" height="48" viewBox="0 0 34 48" fill="none" aria-hidden="true">
+          <path class="scribble__arrow-line" d="M17 4 C 18 16 15 30 11 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path class="scribble__arrow-head" d="M4 36 L11 43 L18 36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Hero line-art decoration: chat bubbles & abstract connections -->
+      <svg class="hero__decoration" width="360" height="300" viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- ambient orbit rings -->
+        <circle cx="250" cy="150" r="120" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.5"/>
+        <circle cx="250" cy="150" r="78" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.35"/>
+        <!-- four-point sparkle -->
+        <path d="M250 92c2.4 11 6.6 15.2 17.6 17.6-11 2.4-15.2 6.6-17.6 17.6-2.4-11-6.6-15.2-17.6-17.6 11-2.4 15.2-6.6 17.6-17.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <!-- soft flowing line -->
+        <path d="M40 235 Q 110 200 175 222 T 320 210" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none" stroke-dasharray="5 6" opacity="0.7"/>
+        <!-- gentle dot grid -->
+        <circle cx="300" cy="120" r="2" fill="currentColor" opacity="0.5"/>
+        <circle cx="320" cy="120" r="2" fill="currentColor" opacity="0.38"/>
+        <circle cx="300" cy="140" r="2" fill="currentColor" opacity="0.38"/>
+        <circle cx="320" cy="140" r="2" fill="currentColor" opacity="0.26"/>
+        <!-- plus + orbit dots -->
+        <path d="M70 70 v9 M65.5 74.5 h9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+        <path d="M44 160 v8 M40 164 h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.55"/>
+        <circle cx="130" cy="50" r="2.5" fill="currentColor" opacity="0.45"/>
+        <circle cx="330" cy="230" r="2.5" fill="currentColor" opacity="0.4"/>
+        <circle cx="370" cy="150" r="3" stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.6"/>
+      </svg>
+
       <div class="hero__chat-mock">
 
-        <!-- chat header -->
         <div class="hcm__head">
-          <div class="hcm__av" style="background:#993556">Л</div>
+          <div class="hcm__av" style="background:#993556"><img src="images/ЛЮСЯ.png" alt="ЛЮСЯ" class="bot-pill-icon"></div>
           <div class="hcm__head-info">
             <strong>ЛЮСЯ</strong>
-            <span>Салон красоты &nbsp;·&nbsp; <span class="hcm__online">онлайн</span></span>
+            <span>Салон красоты</span>
           </div>
         </div>
 
-        <!-- chat messages -->
         <div class="hcm__body">
           <div class="hcm__msg hcm__msg--in hcm__msg--delay-1">
             Привет! Хочу записаться на стрижку, есть что-нибудь на завтра?
@@ -128,7 +176,6 @@
           </div>
         </div>
 
-        <!-- chips -->
         <div class="hcm__chips">
           <button class="hcm__chip">Перенести запись</button>
           <button class="hcm__chip">Услуги и цены</button>
@@ -137,34 +184,33 @@
 
       </div>
 
-      <!-- bots row below chat -->
       <div class="hero__bots-row">
         <div class="hero__bot-pill" style="--col:#D4537E">
-          <span class="hero__bot-pill__av" style="background:#D4537E">С</span>
+          <span class="hero__bot-pill__av" style="background:#D4537E"><img src="images/СЭМ.png" alt="СЭМ" class="bot-pill-icon"></span>
           <span>СЭМ</span>
         </div>
         <div class="hero__bot-pill" style="--col:#1D9E75">
-          <span class="hero__bot-pill__av" style="background:#1D9E75">П</span>
+          <span class="hero__bot-pill__av" style="background:#1D9E75"><img src="images/ПАДИК.png" alt="ПАДИК" class="bot-pill-icon"></span>
           <span>ПАДИК</span>
         </div>
         <div class="hero__bot-pill" style="--col:#D85A30">
-          <span class="hero__bot-pill__av" style="background:#D85A30">Г</span>
+          <span class="hero__bot-pill__av" style="background:#D85A30"><img src="images/ГЛАША.png" alt="ГЛАША" class="bot-pill-icon"></span>
           <span>ГЛАША</span>
         </div>
         <div class="hero__bot-pill" style="--col:#5F5E5A">
-          <span class="hero__bot-pill__av" style="background:#5F5E5A">К</span>
+          <span class="hero__bot-pill__av" style="background:#5F5E5A"><img src="images/КИРИЛЛЫЧ.png" alt="КИРИЛЛЫЧ" class="bot-pill-icon"></span>
           <span>КИРИЛЛЫЧ</span>
         </div>
         <div class="hero__bot-pill hero__bot-pill--active" style="--col:#993556">
-          <span class="hero__bot-pill__av" style="background:#993556">Л</span>
+          <span class="hero__bot-pill__av" style="background:#993556"><img src="images/ЛЮСЯ.png" alt="ЛЮСЯ" class="bot-pill-icon"></span>
           <span>ЛЮСЯ</span>
         </div>
         <div class="hero__bot-pill" style="--col:#0891B2">
-          <span class="hero__bot-pill__av" style="background:#0891B2">Б</span>
+          <span class="hero__bot-pill__av" style="background:#0891B2"><img src="images/БАРС.png" alt="БАРС" class="bot-pill-icon"></span>
           <span>БАРС</span>
         </div>
         <div class="hero__bot-pill" style="--col:#185FA5">
-          <span class="hero__bot-pill__av" style="background:#185FA5">М</span>
+          <span class="hero__bot-pill__av" style="background:#185FA5"><img src="images/МАКС.png" alt="МАКС" class="bot-pill-icon"></span>
           <span>МАКС</span>
         </div>
       </div>
@@ -172,73 +218,148 @@
     </div>
 
   </div>
+
+
 </section>
 
 
 <!-- ============================================================
-     2. PAIN
+     1b. PROOF BAR — key metrics strip
 ============================================================ -->
+<section class="proofbar" aria-label="Ключевые показатели">
+  <div class="container">
+    <ul class="proofbar__list reveal" data-stagger>
+      <li class="proofbar__item">
+        <span class="proofbar__num" data-i18n="proof.v1">3 дня</span>
+        <span class="proofbar__label" data-i18n="proof.l1">от брифа до запуска под ключ</span>
+      </li>
+      <li class="proofbar__item">
+        <span class="proofbar__num" data-i18n="proof.v2">~3 сек</span>
+        <span class="proofbar__label" data-i18n="proof.l2">среднее время первого ответа</span>
+      </li>
+      <li class="proofbar__item">
+        <span class="proofbar__num">24/7</span>
+        <span class="proofbar__label" data-i18n="proof.l3">на связи без выходных и больничных</span>
+      </li>
+      <li class="proofbar__item">
+        <span class="proofbar__num" data-i18n="proof.v4">до 80%</span>
+        <span class="proofbar__label" data-i18n="proof.l4">обращений бот закрывает сам</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     2. PAIN — editorial numbered list
+============================================================ -->
+<div class="section-divider" aria-hidden="true"><span class="section-divider__dot"></span></div>
+
 <section class="pain-section" id="pain">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="pain.title">Узнаёте?</h2>
-    <div class="pain-grid reveal">
+    <div class="pain-section__head reveal">
+      <div class="section-eyebrow" data-i18n="pain.eyebrow">Проблема</div>
+      <h2 class="section-title" data-i18n="pain.title">Где бизнес теряет клиентов</h2>
+    </div>
+
+    <div class="pain-grid reveal" data-stagger>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v10l4 2M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.5A8 8 0 1 1 11.5 6 6.3 6.3 0 0 0 22 16.5Z"/>
+              <path d="M19 4.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7Z"/>
+            </svg>
+          </span>
+          <span class="pain-card__num">01</span>
         </div>
-        <h3 data-i18n="pain.p1.title">Заявки приходят ночью</h3>
-        <p data-i18n="pain.p1.desc">Клиент написал в 23:00 - менеджер увидит утром. К тому времени он уже купил у конкурента.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p1.title">Заявки приходят ночью</h3>
+        <p class="pain-card__desc" data-i18n="pain.p1.desc">Клиент написал в 23:00 — менеджер увидит утром. К тому времени он уже купил у конкурента.</p>
       </div>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 10h16M4 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M17 17c0 2 3 2 3 4v1H14v-1c0-2 3-2 3-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 11a9 9 0 0 1 15-4l2 2"/>
+              <path d="M22 4v5h-5"/>
+              <path d="M23 17a9 9 0 0 1-15 4l-2-2"/>
+              <path d="M6 24v-5h5"/>
+            </svg>
+          </span>
+          <span class="pain-card__num">02</span>
         </div>
-        <h3 data-i18n="pain.p2.title">80% вопросов одинаковые</h3>
-        <p data-i18n="pain.p2.desc">Цена, условия, как записаться - менеджер отвечает на одно и то же по кругу. Вместо продаж.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p2.title">80% вопросов одинаковые</h3>
+        <p class="pain-card__desc" data-i18n="pain.p2.desc">Цена, условия, как записаться — менеджер отвечает на одно и то же по кругу. Вместо продаж.</p>
       </div>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v1M12 20v1M4.22 4.22l.707.707M18.364 18.364l.707.707M3 12H4M20 12h1M4.927 19.073l.707-.707M18.364 5.636l.707-.707" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 4l-1.5 9h4l-1.5 11 8-13h-4.5L15 4Z"/>
+            </svg>
+          </span>
+          <span class="pain-card__num">03</span>
         </div>
-        <h3 data-i18n="pain.p3.title">Менеджер выгорает от рутины</h3>
-        <p data-i18n="pain.p3.desc">Каждый день одни и те же вопросы. Хороший продавец начинает халтурить, потом уходит - и надо всё начинать заново.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p3.title">Менеджер выгорает от рутины</h3>
+        <p class="pain-card__desc" data-i18n="pain.p3.desc">Каждый день одни и те же вопросы. Хороший продавец начинает халтурить, потом уходит — и надо всё начинать заново.</p>
       </div>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9.5 9a3 3 0 1 1 5 2.829A1.5 1.5 0 0 0 13 13.25V14m0 2.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="10" width="16" height="12" rx="3"/>
+              <path d="M14 10V6"/><circle cx="14" cy="5" r="1.3"/>
+              <path d="M10 14.5l1.6 1.6M11.6 14.5L10 16.1"/>
+              <path d="M17 14.5l1.6 1.6M18.6 14.5L17 16.1"/>
+              <line x1="11.5" y1="19" x2="16.5" y2="19"/>
+            </svg>
+          </span>
+          <span class="pain-card__num">04</span>
         </div>
-        <h3 data-i18n="pain.p4.title">Настроили бот - не продаёт</h3>
-        <p data-i18n="pain.p4.desc">Купили, подключили, разочаровались. Дело не в ботах - дело в том, что у них нет характера и понимания клиента.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p4.title">Настроили бот — не продаёт</h3>
+        <p class="pain-card__desc" data-i18n="pain.p4.desc">Купили, подключили, разочаровались. Дело не в ботах — дело в том, что у них нет характера и понимания клиента.</p>
       </div>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="14" cy="14" r="9"/>
+              <path d="M14 9v10M16.6 11c-.6-.8-1.6-1.2-2.7-1.2-1.8 0-3 .9-3 2.2 0 3 6 1.6 6 4.6 0 1.3-1.3 2.2-3.1 2.2-1.2 0-2.3-.5-2.8-1.3"/>
+            </svg>
+          </span>
+          <span class="pain-card__num">05</span>
         </div>
-        <h3 data-i18n="pain.p5.title">Живой менеджер - дорого и нестабильно</h3>
-        <p data-i18n="pain.p5.desc">Нанять - дорого. Обучить - долго. Заболел, в отпуске, уволился - бизнес встаёт. Один точно не справится с потоком.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p5.title">Живой менеджер — дорого и нестабильно</h3>
+        <p class="pain-card__desc" data-i18n="pain.p5.desc">Нанять — дорого. Обучить — долго. Заболел, уволился — бизнес встаёт. Один точно не справится с потоком.</p>
       </div>
 
       <div class="pain-card">
-        <div class="pain-card__icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v5M12 16v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="pain-card__top">
+          <span class="pain-card__icon pain-card__icon--img" aria-hidden="true">
+            <img src="images/chat.png" width="21" height="21" alt="" class="pain-card__icon-img">
+          </span>
+          <span class="pain-card__num">06</span>
         </div>
-        <h3 data-i18n="pain.p6.title">Бот не различает клиентов</h3>
-        <p data-i18n="pain.p6.desc">Холодному и горячему - один и тот же ответ. Горячий клиент чувствует равнодушие и уходит к конкуренту.</p>
+        <h3 class="pain-card__title" data-i18n="pain.p6.title">Бот не различает клиентов</h3>
+        <p class="pain-card__desc" data-i18n="pain.p6.desc">Холодному и горячему — один и тот же ответ. Горячий клиент чувствует равнодушие и уходит к конкуренту.</p>
       </div>
 
     </div>
 
     <div class="pain-bridge reveal">
-      <p data-i18n="pain.bridge">Сэйлон создаёт цифровых сотрудников с характером. Они понимают, на каком этапе находится клиент - и отвечают точно под момент.</p>
+      <p data-i18n="pain.bridge">Сэйлон создаёт цифровых сотрудников с характером. Они понимают, на каком этапе находится клиент — и отвечают <strong>точно под момент.</strong></p>
     </div>
+
   </div>
 </section>
 
+
+<div class="section-divider" aria-hidden="true"><span class="section-divider__dot"></span></div>
 
 <!-- ============================================================
      3. BOT PERSONAS (interactive)
@@ -249,15 +370,15 @@
     <div class="personas-section__head reveal">
       <div class="personas-eyebrow" data-i18n="personas.eyebrow">Как работает Сэйлон?</div>
       <h2 class="section-title" data-i18n="personas.title">Бот знает, что происходит с вашим клиентом</h2>
-      <p class="section-desc" data-i18n="personas.subtitle">Выберите персонажа и состояние - посмотрите, как бот с характером отвечает в нужный момент.</p>
+      <p class="section-desc section-desc--center" data-i18n="personas.subtitle">Выберите персонажа и состояние — посмотрите, как бот с характером отвечает в нужный момент.</p>
     </div>
 
-    <div class="bot-selector-label reveal" data-i18n="personas.choose.bot">ВЫБЕРИТЕ ПЕРСОНАЖА</div>
+    <div class="bot-selector-label reveal" data-i18n="personas.choose.bot">Выберите персонажа</div>
     <div class="bot-selector reveal" id="botSelector" role="group" aria-label="Выбор персонажа"></div>
 
     <div class="bot-char-desc reveal" id="botCharDesc"></div>
 
-    <div class="state-selector-label reveal" data-i18n="personas.choose.state">СОСТОЯНИЕ КЛИЕНТА</div>
+    <div class="state-selector-label reveal" data-i18n="personas.choose.state">Состояние клиента</div>
     <div class="state-selector reveal" id="stateSelector" role="group" aria-label="Состояние клиента"></div>
 
     <div class="persona-detail reveal" id="personaDetail"></div>
@@ -270,15 +391,18 @@
 </section>
 
 
+<div class="section-divider" aria-hidden="true"><span class="section-divider__dot"></span></div>
+
 <!-- ============================================================
      4. HOW IT WORKS
 ============================================================ -->
 <section class="how-section" id="how">
-  <div class="container how-section__inner">
+  <div class="container how-section__inner" style="position:relative;">
 
     <div class="how-steps reveal">
+      <div class="section-eyebrow" data-i18n="how.eyebrow">Процесс</div>
       <h2 class="section-title" data-i18n="how.title">Запуск за 3 дня</h2>
-      <ol class="steps-list">
+      <ol class="steps-list" style="margin-top:40px">
         <li class="step-item">
           <span class="step-item__num" aria-hidden="true">01</span>
           <div class="step-item__body">
@@ -290,24 +414,62 @@
           <span class="step-item__num" aria-hidden="true">02</span>
           <div class="step-item__body">
             <h3 data-i18n="how.step2.title">Задаёте имя и характер</h3>
-            <p data-i18n="how.step2.desc">Придумываете, как зовут вашего бота и каким он должен быть - заботливым, уверенным, с юмором. Это ваш сотрудник.</p>
+            <p data-i18n="how.step2.desc">Придумываете, как зовут вашего бота и каким он должен быть — заботливым, уверенным, с юмором. Это ваш сотрудник.</p>
           </div>
         </li>
         <li class="step-item">
           <span class="step-item__num" aria-hidden="true">03</span>
           <div class="step-item__body">
             <h3 data-i18n="how.step3.title">Бот выходит на работу</h3>
-            <p data-i18n="how.step3.desc">Запуск за 3 дня. Бот общается, понимает состояние клиента и ведёт его к покупке - без вашего участия.</p>
+            <p data-i18n="how.step3.desc">Запуск за 3 дня. Бот общается, понимает состояние клиента и ведёт его к покупке — без вашего участия.</p>
           </div>
         </li>
       </ol>
     </div>
 
-    <div class="turnkey-block reveal reveal--delay">
+    <div class="turnkey-block reveal reveal--delay" style="position:relative;">
+      <!-- How section decoration: data flow / gears concept -->
+      <svg class="how-decoration" width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Large gear ring -->
+        <circle cx="150" cy="100" r="60" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <!-- Inner circle -->
+        <circle cx="150" cy="100" r="30" stroke="currentColor" stroke-width="1.5"/>
+        <!-- Center dot -->
+        <circle cx="150" cy="100" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <!-- Gear teeth (outer tick marks) -->
+        <line x1="150" y1="34"  x2="150" y2="25"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="150" y1="166" x2="150" y2="175" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="84"  y1="100" x2="75"  y2="100" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="216" y1="100" x2="225" y2="100" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="103" y1="57"  x2="97"  y2="50"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="197" y1="57"  x2="203" y2="50"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="103" y1="143" x2="97"  y2="150" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="197" y1="143" x2="203" y2="150" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Small satellite gear -->
+        <circle cx="240" cy="55"  r="22" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <circle cx="240" cy="55"  r="10" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="240" cy="55"  r="3"  stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <!-- Connector between gears -->
+        <path d="M207 70 Q220 62 218 55" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Data flow arrows (left side) -->
+        <path d="M20 70 L55 70"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M48 64 L55 70 L48 76" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 100 L60 100" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M53 94 L60 100 L53 106" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 130 L55 130" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M48 124 L55 130 L48 136" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Plus marks -->
+        <path d="M20 35 v8 M16 39 h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M275 140 v8 M271 144 h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <!-- Small dots -->
+        <circle cx="20"  cy="160" r="2" fill="currentColor" opacity="0.5"/>
+        <circle cx="280" cy="30"  r="2" fill="currentColor" opacity="0.5"/>
+        <circle cx="40"  cy="185" r="2" fill="currentColor" opacity="0.3"/>
+      </svg>
       <div class="turnkey-card">
         <h3 data-i18n="turnkey.title">Нет времени разбираться?</h3>
-        <p data-i18n="turnkey.desc">Мы берем всё на себя: от брифа до запуска. Вы передаете информацию - через 3 дня бот работает.</p>
-        <p class="turnkey-card__alt" data-i18n="turnkey.alt">Или настройте сами по шаблону - без оплаты за внедрение.</p>
+        <p data-i18n="turnkey.desc">Мы берем всё на себя: от брифа до запуска. Вы передаете информацию — через 3 дня бот работает.</p>
+        <p class="turnkey-card__alt" data-i18n="turnkey.alt">Или настройте сами по шаблону — без оплаты за внедрение.</p>
         <a href="#contacts" class="btn btn--primary" data-i18n="turnkey.cta">Обсудить подключение</a>
       </div>
     </div>
@@ -317,41 +479,132 @@
 
 
 <!-- ============================================================
-     5. USP
+     5. USP — dark editorial feature list
 ============================================================ -->
 <section class="usp-section" id="usp">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="usp.title">Чем Сэйлон отличается</h2>
-    <div class="usp-grid reveal">
 
-      <div class="usp-card">
-        <div class="usp-card__num">01</div>
-        <div class="usp-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 12h3M14 12h3" stroke="currentColor" stroke-width="1.5"/></svg>
+    <div class="usp-section__head reveal">
+      <div class="section-eyebrow" data-i18n="usp.eyebrow">Отличия</div>
+      <h2 class="section-title" data-i18n="usp.title">Чем Сэйлон отличается</h2>
+    </div>
+
+    <div class="usp-features reveal" data-stagger>
+
+      <!-- Feature 1 -->
+      <div class="usp-feature">
+        <div class="usp-feature__copy">
+          <div class="usp-feature__meta">
+            <span class="usp-feature__index">01</span>
+            <span class="usp-feature__tag" data-i18n="usp.u1.tag">Контекст</span>
+          </div>
+          <h3 data-i18n="usp.u1.title">Понимает, где клиент</h3>
+          <p data-i18n="usp.u1.desc">Не один скрипт для всех. Бот видит состояние клиента — сомневается, думает, готов купить — и отвечает под него.</p>
         </div>
-        <h3 data-i18n="usp.u1.title">Понимает, где клиент</h3>
-        <p data-i18n="usp.u1.desc">Не один скрипт для всех. Бот видит состояние клиента - сомневается, думает, готов купить - и отвечает под него.</p>
+        <div class="usp-feature__visual">
+          <div class="usp-feature__widget">
+            <div class="usp-chat-demo">
+              <div class="usp-cd-msg usp-cd-msg--in" data-i18n="usp.u1.msg1">Дороговато... не знаю, стоит ли?</div>
+              <div class="usp-cd-detect" data-i18n="usp.u1.detect">Бот видит: клиент сомневается</div>
+              <div class="usp-cd-msg usp-cd-msg--out" data-i18n="usp.u1.msg2">Понимаю — важное решение. Предлагаю попробовать без риска: если не подойдёт — просто не продолжаете.</div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="usp-card">
-        <div class="usp-card__num">02</div>
-        <div class="usp-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <!-- Feature 2 -->
+      <div class="usp-feature">
+        <div class="usp-feature__visual">
+          <div class="usp-feature__widget">
+            <div class="usp-personas-demo">
+              <div class="usp-pd-item">
+                <span class="usp-pd-av" style="background:#993556"><img src="images/ЛЮСЯ.png" alt="Люся" class="bot-av-icon"></span>
+                <div class="usp-pd-body">
+                  <div class="usp-pd-top">
+                    <span class="usp-pd-name">Люся</span>
+                    <span class="usp-pd-meta">
+                      <svg class="usp-pd-check" width="15" height="10" viewBox="0 0 15 10" fill="none"><path d="M1 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="usp-pd-time">14:30</span>
+                    </span>
+                  </div>
+                  <div class="usp-pd-msg">Подруга, завтра есть 14:30 — идеальное время!</div>
+                </div>
+              </div>
+              <div class="usp-pd-item">
+                <span class="usp-pd-av" style="background:#1D9E75"><img src="images/ПАДИК.png" alt="Падик" class="bot-av-icon"></span>
+                <div class="usp-pd-body">
+                  <div class="usp-pd-top">
+                    <span class="usp-pd-name">Падик</span>
+                    <span class="usp-pd-meta">
+                      <svg class="usp-pd-check" width="15" height="10" viewBox="0 0 15 10" fill="none"><path d="M1 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="usp-pd-time">12:15</span>
+                    </span>
+                  </div>
+                  <div class="usp-pd-msg">Дружище, первый час — 600 руб. Записать на завтра?</div>
+                </div>
+              </div>
+              <div class="usp-pd-item">
+                <span class="usp-pd-av" style="background:#5F5E5A"><img src="images/КИРИЛЛЫЧ.png" alt="Кириллыч" class="bot-av-icon"></span>
+                <div class="usp-pd-body">
+                  <div class="usp-pd-top">
+                    <span class="usp-pd-name">Кириллыч</span>
+                    <span class="usp-pd-meta">
+                      <svg class="usp-pd-check" width="15" height="10" viewBox="0 0 15 10" fill="none"><path d="M1 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 5l3 3 5-7" stroke="#2455F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="usp-pd-time">09:47</span>
+                    </span>
+                  </div>
+                  <div class="usp-pd-msg">Диагностика бесплатно. В субботу 9:00 — подходит?</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 data-i18n="usp.u2.title">Имя и характер задаёте вы</h3>
-        <p data-i18n="usp.u2.desc">Клиенты не разговаривают с "ботом". Они общаются с Леной, Максом или Артёмом - вашим цифровым сотрудником с характером, который вы придумали сами.</p>
+        <div class="usp-feature__copy">
+          <div class="usp-feature__meta">
+            <span class="usp-feature__index">02</span>
+            <span class="usp-feature__tag" data-i18n="usp.u2.tag">Идентичность</span>
+          </div>
+          <h3 data-i18n="usp.u2.title">Имя и характер задаёте вы</h3>
+          <p data-i18n="usp.u2.desc">Клиенты не разговаривают с «ботом». Они общаются с Леной, Максом или Артёмом — вашим цифровым сотрудником с характером.</p>
+        </div>
       </div>
 
-      <div class="usp-card">
-        <div class="usp-card__num">03</div>
-        <div class="usp-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <!-- Feature 3 -->
+      <div class="usp-feature">
+        <div class="usp-feature__copy">
+          <div class="usp-feature__meta">
+            <span class="usp-feature__index">03</span>
+            <span class="usp-feature__tag" data-i18n="usp.u3.tag">Простота</span>
+          </div>
+          <h3 data-i18n="usp.u3.title">Без программистов</h3>
+          <p data-i18n="usp.u3.desc">Вы заполняете шаблон — мы настраиваем. Никакого кода, никаких технических знаний. Просто рассказываете о своём бизнесе.</p>
         </div>
-        <h3 data-i18n="usp.u3.title">Без программистов</h3>
-        <p data-i18n="usp.u3.desc">Вы заполняете шаблон - мы настраиваем. Никакого кода, никаких технических знаний. Просто рассказываете о своём бизнесе.</p>
+        <div class="usp-feature__visual">
+          <div class="usp-feature__widget">
+            <div class="usp-setup-list">
+              <div class="usp-setup-item usp-setup-item--yes">
+                <svg class="usp-setup-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="#16A34A" stroke-width="1.5"/><path d="M6.5 10.5l2.5 2.5 5-5" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="usp.u3.item1">Заполнить бриф о бизнесе</span>
+              </div>
+              <div class="usp-setup-item usp-setup-item--yes">
+                <svg class="usp-setup-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="#16A34A" stroke-width="1.5"/><path d="M6.5 10.5l2.5 2.5 5-5" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="usp.u3.item2">Придумать имя и характер</span>
+              </div>
+              <div class="usp-setup-item usp-setup-item--no">
+                <svg class="usp-setup-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="#CBD5E1" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span data-i18n="usp.u3.item3">Писать код или настраивать API</span>
+              </div>
+              <div class="usp-setup-item usp-setup-item--no">
+                <svg class="usp-setup-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="#CBD5E1" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <span data-i18n="usp.u3.item4">Нанимать разработчика</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
+
   </div>
 </section>
 
@@ -361,10 +614,15 @@
 ============================================================ -->
 <section class="cases-section" id="cases">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="cases.title" style="margin-bottom:28px">Реальные результаты</h2>
+    <div class="cases-section__head">
+      <div>
+        <div class="section-eyebrow" data-i18n="cases.eyebrow">Кейсы</div>
+        <h2 class="section-title" data-i18n="cases.title">Реальные результаты</h2>
+      </div>
+    </div>
     <div class="cases-carousel-wrap reveal">
       <button class="cases-nav-btn" id="casesPrev" aria-label="Предыдущий кейс">
-        <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M12.5 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12.5 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="cases-viewport">
         <div class="cases-track" id="casesTrack">
@@ -376,7 +634,7 @@
             <span class="case-card__city" data-i18n="case1.city">Брянск</span>
           </div>
           <h3 data-i18n="case1.name">Студия "Сам себе фотограф"</h3>
-          <p data-i18n="case1.text">Собственник ведёт несколько бизнесов и не успевал отвечать клиентам в ВКонтакте. К моменту ответа часть уже уходила к конкурентам. Подключили бота - СЭМ взял переписку на себя.</p>
+          <p data-i18n="case1.text">Собственник ведёт несколько бизнесов и не успевал отвечать клиентам в ВКонтакте. К моменту ответа часть уже уходила к конкурентам. Подключили бота — СЭМ взял переписку на себя.</p>
           <div class="case-card__results">
             <div class="case-result">
               <strong data-i18n="case1.r1">80%</strong>
@@ -396,7 +654,7 @@
             <span class="case-card__city" data-i18n="case2.city">Магнитогорск</span>
           </div>
           <h3 data-i18n="case2.name">Падел.Точка</h3>
-          <p data-i18n="case2.text">Много новичков не понимали правил падела и не решались записаться. ПАДИК объясняет правила, отвечает на вопросы и сразу записывает на слот - как свой парень с корта.</p>
+          <p data-i18n="case2.text">Много новичков не понимали правил падела и не решались записаться. ПАДИК объясняет правила, отвечает на вопросы и сразу записывает на слот — как свой парень с корта.</p>
           <div class="case-card__results">
             <div class="case-result">
               <strong data-i18n="case2.r1">3 сек</strong>
@@ -409,10 +667,10 @@
           </div>
         </div>
 
-      </div>
+        </div>
       </div>
       <button class="cases-nav-btn" id="casesNext" aria-label="Следующий кейс">
-        <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M7.5 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
     <div class="cases-dots" id="casesDots">
@@ -428,10 +686,37 @@
 ============================================================ -->
 <section class="pricing-section" id="pricing">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="pricing.title">Тарифы</h2>
-    <div class="pricing-grid reveal">
 
-      <div class="pricing-card">
+    <div class="pricing-section__head reveal">
+      <div class="section-eyebrow" data-i18n="pricing.eyebrow">Тарифы</div>
+      <h2 class="section-title" data-i18n="pricing.title">Тарифы</h2>
+      <p class="section-desc section-desc--center" data-i18n="pricing.subtitle">Выберите подходящий план для вашего бизнеса</p>
+    </div>
+
+    <div class="calc reveal" id="calc">
+      <div class="calc__head">
+        <span class="calc__label" data-i18n="calc.label">Сколько обращений в день у вас сейчас?</span>
+        <span class="calc__count"><span id="calcVal">30</span> <span data-i18n="calc.unit">в&nbsp;день</span></span>
+      </div>
+      <input type="range" class="calc__range" id="calcRange" min="5" max="120" step="5" value="30" aria-label="Обращений в день">
+      <div class="calc__scale" aria-hidden="true">
+        <span>5</span><span>40</span><span>80</span><span>120+</span>
+      </div>
+      <div class="calc__result" id="calcResult" aria-live="polite">
+        <span class="calc__result-plan">
+          <span data-i18n="calc.fits">Вам подойдёт тариф</span>
+          <strong id="calcPlan">Средний</strong>
+        </span>
+        <span class="calc__result-price">
+          <strong id="calcPrice">20 000</strong>
+          <span id="calcRub" data-i18n="pricing.rub">руб/мес</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="pricing-grid reveal" data-stagger>
+
+      <div class="pricing-card" data-plan="min">
         <h3 data-i18n="plan1.name">Минимальный</h3>
         <p class="pricing-card__limit" data-i18n="plan1.limit">до 20 обращений / день</p>
         <div class="pricing-card__price">10 000 <span data-i18n="pricing.rub">руб/мес</span></div>
@@ -439,28 +724,36 @@
         <a href="#contacts" class="btn btn--outline" data-i18n="pricing.select">Выбрать</a>
       </div>
 
-      <div class="pricing-card pricing-card--featured">
+      <div class="pricing-card pricing-card--featured" data-plan="mid">
         <div class="pricing-card__badge" data-i18n="pricing.recommended">Рекомендуем</div>
         <h3 data-i18n="plan2.name">Средний</h3>
-        <p class="pricing-card__limit" data-i18n="plan2.limit">20-50 обращений / день</p>
+        <p class="pricing-card__limit" data-i18n="plan2.limit">20–50 обращений / день</p>
         <div class="pricing-card__price">20 000 <span data-i18n="pricing.rub">руб/мес</span></div>
         <p class="pricing-card__support" data-i18n="plan.support">Поддержка в рабочее время</p>
         <a href="#contacts" class="btn btn--primary" data-i18n="pricing.select">Выбрать</a>
       </div>
 
-      <div class="pricing-card">
+      <div class="pricing-card" data-plan="prem">
+        <div class="scribble scribble--price">
+          <span class="scribble__text" data-i18n="scribble.price">берут чаще всего</span>
+          <svg class="scribble__arrow" width="48" height="44" viewBox="0 0 48 44" fill="none" aria-hidden="true">
+            <path class="scribble__arrow-line" d="M38 4 C 30 14 18 24 8 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path class="scribble__arrow-head" d="M2 27 L7 39 L19 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <h3 data-i18n="plan3.name">Премиум</h3>
-        <p class="pricing-card__limit" data-i18n="plan3.limit">50-100 обращений / день</p>
+        <p class="pricing-card__limit" data-i18n="plan3.limit">50–100 обращений / день</p>
         <div class="pricing-card__price">30 000 <span data-i18n="pricing.rub">руб/мес</span></div>
         <p class="pricing-card__support" data-i18n="plan3.support">Приоритетная поддержка</p>
         <a href="#contacts" class="btn btn--outline" data-i18n="pricing.select">Выбрать</a>
       </div>
 
     </div>
+
     <div class="pricing-opts reveal">
       <div class="pricing-opt">
         <div class="pricing-opt__label" data-i18n="pricing.opt.self.label">Самостоятельно</div>
-        <p data-i18n="pricing.opt.self.desc">Настройте сами по шаблону - платите только тариф. Без доплат за внедрение.</p>
+        <p data-i18n="pricing.opt.self.desc">Настройте сами по шаблону — платите только тариф. Без доплат за внедрение.</p>
       </div>
       <div class="pricing-opt pricing-opt--featured">
         <div class="pricing-opt__label" data-i18n="pricing.opt.turnkey.label">Под ключ</div>
@@ -468,10 +761,11 @@
           <strong>40 000 руб.</strong>
           <s>90 000 руб.</s>
         </div>
-        <p data-i18n="pricing.opt.turnkey.desc">Берём всё на себя: разбираемся в вашем бизнесе, настраиваем характер, сценарии и логику бота. Вы просто рассказываете - мы делаем.</p>
+        <p data-i18n="pricing.opt.turnkey.desc">Берём всё на себя: разбираемся в вашем бизнесе, настраиваем характер, сценарии и логику бота.</p>
       </div>
     </div>
-    <p class="pricing-note reveal" data-i18n="pricing.note">Больше 100 обращений в день - 1 руб. за сообщение. Напишите, рассчитаем.</p>
+
+    <p class="pricing-note reveal" data-i18n="pricing.note">Больше 100 обращений в день — 1 руб. за сообщение. Напишите, рассчитаем.</p>
   </div>
 </section>
 
@@ -481,19 +775,24 @@
 ============================================================ -->
 <section class="team-section" id="team">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="team.title">Кто делает Saleon</h2>
-    <div class="team-grid reveal">
+
+    <div class="team-section__head reveal">
+      <div class="section-eyebrow" data-i18n="team.eyebrow">Команда</div>
+      <h2 class="section-title" data-i18n="team.title">Кто делает Saleon</h2>
+    </div>
+
+    <div class="team-grid reveal" data-stagger>
 
       <div class="team-card">
         <div class="team-card__photo">
           <div class="team-card__photo-bg">Т</div>
           <div class="team-card__overlay">
             <strong data-i18n="team.t.name">Татьяна</strong>
-            <span data-i18n="team.t.bio">Более 25 лет в маркетинге. Реальный опыт в десятках бизнесов: автомагазины, общепит, культурно-развлекательный центр, интернет-магазин и розничная сеть медтехники, дистрибьюция в аптеки, стоматология, обучение фармацевтов и врачей, детские комиссионные магазины, производство, детский образовательный центр. Розница, услуги, опт, b2b, b2g - практически все форматы. 10 лет параллельно преподавала маркетинг в вузе. Автор идеи продукта: создала его потому, что на собственном опыте понимает, где бизнес теряет клиентов и деньги.</span>
+            <span data-i18n="team.t.bio">Более 25 лет в маркетинге. Реальный опыт в десятках бизнесов: автомагазины, общепит, культурно-развлекательный центр, интернет-магазин и розничная сеть медтехники, дистрибьюция в аптеки, стоматология, обучение фармацевтов и врачей, детские комиссионные магазины, производство, детский образовательный центр. Автор идеи продукта.</span>
           </div>
         </div>
         <strong data-i18n="team.t.name">Татьяна</strong>
-        <span data-i18n="team.t.role">Маркетолог, 25 лет в бизнесе. Автор продукта. Десятки ниш</span>
+        <span data-i18n="team.t.role">Маркетолог, 25 лет в бизнесе. Автор продукта</span>
       </div>
 
       <div class="team-card">
@@ -501,7 +800,7 @@
           <div class="team-card__photo-bg">И</div>
           <div class="team-card__overlay">
             <strong data-i18n="team.i.name">Игорь</strong>
-            <span data-i18n="team.i.bio">Программирует с 12 лет - за плечами уже 8 лет реальной практики. В 20 лет руководит командой разработчиков и воплощает в жизнь самые нестандартные технические задумки. В портфеле - разветвлённые CRM-системы и многофункциональные мобильные приложения. Отвечает за то, чтобы бот работал стабильно, гибко и масштабировался под любую платформу.</span>
+            <span data-i18n="team.i.bio">Программирует с 12 лет — за плечами уже 8 лет реальной практики. В 20 лет руководит командой разработчиков. В портфеле — CRM-системы и мобильные приложения.</span>
           </div>
         </div>
         <strong data-i18n="team.i.name">Игорь</strong>
@@ -513,7 +812,7 @@
           <div class="team-card__photo-bg">Д</div>
           <div class="team-card__overlay">
             <strong data-i18n="team.d.name">Дима</strong>
-            <span data-i18n="team.d.bio">Воплощает любые дизайн-решения - от фирменного стиля до полноценного сайта. Работает с ИИ-инструментами - быстрее и нестандартнее большинства опытных дизайнеров.</span>
+            <span data-i18n="team.d.bio">Воплощает любые дизайн-решения — от фирменного стиля до полноценного сайта. Работает с ИИ-инструментами быстрее и нестандартнее большинства опытных дизайнеров.</span>
           </div>
         </div>
         <strong data-i18n="team.d.name">Дима</strong>
@@ -525,11 +824,11 @@
           <div class="team-card__photo-bg">А</div>
           <div class="team-card__overlay">
             <strong data-i18n="team.a.name">Арина</strong>
-            <span data-i18n="team.a.bio">20 лет - и очень внимательный взгляд на детали. Работает за кулисами: тщательно прописывает каждый шаг, который проходит клиент на пути к покупке, чтобы бот точно понимал контекст и знал, что ответить в нужный момент. Именно благодаря её работе боты получаются с выстроенными сценариями, которые ведут клиента к результату.</span>
+            <span data-i18n="team.a.bio">20 лет — и очень внимательный взгляд на детали. Тщательно прописывает каждый шаг клиентского пути, чтобы бот точно понимал контекст и знал, что ответить в нужный момент.</span>
           </div>
         </div>
         <strong data-i18n="team.a.name">Арина</strong>
-        <span data-i18n="team.a.role">Архитектор клиентского пути. Прописывает сценарии бота</span>
+        <span data-i18n="team.a.role">Архитектор клиентского пути. Прописывает сценарии</span>
       </div>
 
     </div>
@@ -542,37 +841,42 @@
 ============================================================ -->
 <section class="faq-section" id="faq">
   <div class="container">
-    <h2 class="section-title reveal" data-i18n="faq.title">Частые вопросы</h2>
-    <div class="faq-list reveal">
+
+    <div class="faq-section__head reveal">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title" data-i18n="faq.title">Частые вопросы</h2>
+    </div>
+
+    <div class="faq-list reveal" data-stagger>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q1">Что такое "цифровой сотрудник"?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a1">Это ИИ-бот с именем и характером, который общается с клиентами в Telegram и ВКонтакте. Понимает, на каком этапе покупки клиент, и отвечает под ситуацию - не по одному скрипту для всех.</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a1">Это ИИ-бот с именем и характером, который общается с клиентами в Telegram и ВКонтакте. Понимает, на каком этапе покупки клиент, и отвечает под ситуацию — не по одному скрипту для всех.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q2">Правда что запуск за 3 дня?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a2">Да, если у вас есть готовые материалы: прайс, описание услуг, ответы на частые вопросы. Нет готового - соберём вместе на созвоне, тогда 2-4 недели.</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a2">Да, если у вас есть готовые материалы: прайс, описание услуг, ответы на частые вопросы. Нет готового — соберём вместе на созвоне, тогда 2–4 недели.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q3">Что нужно от меня для старта?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a3">Прайс, описание услуг, ответы на частые вопросы и придуманный характер для бота. Созвон 30 минут - и мы всё соберём вместе.</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a3">Прайс, описание услуг, ответы на частые вопросы и придуманный характер для бота. Созвон 30 минут — и мы всё соберём вместе.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q4">Можно настроить самостоятельно?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="faq-item__a"><p data-i18n="faq.a4">Да. Есть подробный шаблон. В этом случае оплачивается только ежемесячный тариф.</p></div>
       </div>
@@ -580,31 +884,33 @@
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q5">Бот может ответить неправильно?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a5">Бот отвечает только по вашей базе знаний - не придумывает. Перед запуском - тестирование всех сценариев. Менеджер может вмешаться в любой момент.</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a5">Бот отвечает только по вашей базе знаний — не придумывает. Перед запуском — тестирование всех сценариев. Менеджер может вмешаться в любой момент.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q6">Клиенты не любят ботов.</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a6">Клиенты не любят скучных ботов. Наш отвечает мгновенно, говорит живо, подстраивается под тон и не представляется "роботом". Мгновенный ответ ценят больше, чем "перезвоним через час".</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a6">Клиенты не любят скучных ботов. Наш отвечает мгновенно, говорит живо, подстраивается под тон. Мгновенный ответ ценят больше, чем "перезвоним через час".</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-item__q" aria-expanded="false">
           <span data-i18n="faq.q7">Где работает бот?</span>
-          <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="faq-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="faq-item__a"><p data-i18n="faq.a7">Telegram, ВКонтакте, чат на сайте. Интегрируется с Bitrix24, amoCRM и другими системами. WhatsApp - по запросу.</p></div>
+        <div class="faq-item__a"><p data-i18n="faq.a7">Работает в CRM, Telegram, ВКонтакте, MAX и Instagram. Интегрируется с Bitrix24, amoCRM и другими системами.</p></div>
       </div>
 
     </div>
   </div>
 </section>
 
+
+<div class="section-divider" aria-hidden="true"><span class="section-divider__dot"></span></div>
 
 <!-- ============================================================
      10. FINAL CTA / CONTACTS
@@ -613,8 +919,24 @@
   <div class="container contact-section__inner">
 
     <div class="contact-info reveal">
+      <div class="section-eyebrow" data-i18n="contact.eyebrow">Контакты</div>
       <h2 data-i18n="contact.title">Запишитесь на созвон</h2>
-      <p data-i18n="contact.desc">Бесплатный созвон 30 минут - разберём вашу ситуацию, придумаем характер бота, покажем как это работает в вашей нише.</p>
+      <p data-i18n="contact.desc">Бесплатный созвон 30 минут — разберём вашу ситуацию, придумаем характер бота, покажем как это работает в вашей нише.</p>
+      <div class="stat-row" aria-label="Ключевые показатели">
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">дня на запуск</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="24">0</span>
+          <span class="stat-label">часа на связи</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">платформ</span>
+        </div>
+      </div>
+
       <div class="contact-author">
         <div class="contact-author__photo">
           <span class="contact-author__letter">Т</span>
@@ -649,7 +971,7 @@
               <option value="ecom"      data-i18n="niche.ecom">E-commerce</option>
               <option value="other"     data-i18n="form.niche.other">Другое</option>
             </select>
-            <svg class="form-select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="#7A90BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="form-select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="#8892A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
         </div>
         <button type="submit" class="btn btn--primary btn--lg btn--block" data-i18n="form.submit">Записаться на созвон</button>
@@ -680,11 +1002,12 @@
       <div class="footer__brand">
         <a href="#" class="footer__logo" aria-label="Saleon">
           <div class="footer__logo-icon">
-            <img src="assets/images/saleon-avatar.png" alt="" width="24" height="24" aria-hidden="true">
+            <img src="assets/images/saleon-avatar.png" alt="" width="28" height="28" aria-hidden="true" loading="lazy">
           </div>
           <span>Saleon</span>
         </a>
         <p data-i18n="footer.tagline">Цифровые сотрудники с характером</p>
+        <p class="footer__sign" data-i18n="footer.sign">сделано с характером ✦</p>
       </div>
 
       <nav class="footer__nav" aria-label="Ссылки подвала">
@@ -723,20 +1046,18 @@
 </footer>
 
 
-
-
 <!-- CHAT TRIGGER -->
 <div class="chat-trigger" id="chatTrigger">
   <div class="chat-trigger__tooltip">Напишите нам</div>
   <button class="chat-trigger__btn" id="chatTriggerBtn" aria-label="Открыть чат">
-    <img src="assets/images/saleon-avatar.png" alt="" width="42" height="42">
+    <img src="assets/images/saleon-avatar.png" alt="" width="38" height="38" loading="lazy">
     <span class="chat-trigger__pulse"></span>
   </button>
 </div>
 
 <!-- MOBILE STICKY CTA -->
 <a href="#contacts" class="mobile-cta" id="mobileCta" aria-label="Попробовать бесплатно">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.281c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.569-4.46c.537-.194 1.006.131.834.939z"/></svg>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.281c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.569-4.46c.537-.194 1.006.131.834.939z"/></svg>
   <span class="mobile-cta__text" data-i18n="mobile.cta">Попробовать бесплатно</span>
 </a>
 
@@ -747,9 +1068,9 @@
     <button class="popup__close" id="popupClose" aria-label="Закрыть">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
     </button>
-    <img src="assets/images/saleon-avatar.png" alt="" class="popup__mascot" width="64" height="64" aria-hidden="true">
+    <img src="assets/images/saleon-avatar.png" alt="" class="popup__mascot" width="60" height="60" aria-hidden="true" loading="lazy">
     <h3 id="popupTitle" data-i18n="popup.title">Запишитесь на созвон</h3>
-    <p data-i18n="popup.text">Бесплатный созвон 30 минут - покажем как это работает в вашей нише.</p>
+    <p data-i18n="popup.text">Бесплатный созвон 30 минут — покажем как это работает в вашей нише.</p>
     <a href="#contacts" class="btn btn--primary btn--lg btn--block popup__cta" data-i18n="popup.cta">Попробовать бесплатно</a>
     <button class="popup__skip" id="popupSkip" data-i18n="popup.skip">Нет, спасибо</button>
   </div>

@@ -14,15 +14,17 @@ const T = {
     'nav.cta':       'Попробовать',
 
     'hero.eyebrow':      'Сэйлон – ИИ-Продавец',
-    'hero.title':        'Познакомьтесь -<br>это ваш новый<br>сотрудник.',
+    'hero.title':        'Познакомьтесь — это ваш новый <span class="hl-mark">сотрудник</span>.',
     'hero.lead':         'У него есть имя, характер и один единственный режим: работать. Не уволится, не заболеет, не нагрубит клиенту в пятницу вечером.',
     'hero.cta1':         'Познакомиться с Сэйлоном',
     'hero.cta2':         'Посмотреть, как это работает',
     'hero.works':        'Работает в:',
+    'scribble.hero':     'отвечает за 3 секунды,<br>даже ночью',
+    'scribble.price':    'берут чаще всего',
     'hero.ch.site':      'Сайт',
     'hero.visual.hint':  '+ ещё 3 персонажа с характером - ниже',
 
-    'pain.title':       'Узнаёте?',
+    'pain.title':       'Где бизнес теряет клиентов',
     'pain.p1.title':    'Заявки приходят ночью',
     'pain.p1.desc':     'Клиент написал в 23:00 - менеджер увидит утром. К тому времени он уже купил у конкурента.',
     'pain.p2.title':    '80% вопросов одинаковые',
@@ -40,8 +42,8 @@ const T = {
     'personas.eyebrow':       'Как работает Сэйлон?',
     'personas.title':         'Бот знает, что происходит с вашим клиентом',
     'personas.subtitle':      'Выберите персонажа и состояние - посмотрите, как бот с характером отвечает в нужный момент.',
-    'personas.choose.bot':    'ВЫБЕРИТЕ ПЕРСОНАЖА',
-    'personas.choose.state':  'СОСТОЯНИЕ КЛИЕНТА',
+    'personas.choose.bot':    'Выберите персонажа',
+    'personas.choose.state':  'Состояние клиента',
     'personas.cta':           'Хочу такого бота для своего бизнеса',
 
     'how.title':        'Запуск за 3 дня',
@@ -57,13 +59,33 @@ const T = {
     'turnkey.alt':    'Или настройте сами по шаблону - без оплаты за внедрение.',
     'turnkey.cta':    'Обсудить подключение',
 
+    'pain.eyebrow':     'Проблема',
+    'how.eyebrow':      'Процесс',
+    'usp.eyebrow':      'Отличия',
+    'cases.eyebrow':    'Кейсы',
+    'pricing.eyebrow':  'Тарифы',
+    'team.eyebrow':     'Команда',
+    'contact.eyebrow':  'Контакты',
+
     'usp.title':     'Чем Сэйлон отличается',
+    'usp.u1.tag':    'Контекст',
     'usp.u1.title':  'Понимает, где клиент',
     'usp.u1.desc':   'Не один скрипт для всех. Бот видит состояние клиента - сомневается, думает, готов купить - и отвечает под него.',
+    'usp.u1.detect': 'Бот видит: клиент сомневается',
+    'usp.u1.msg1':   'Дороговато... не знаю, стоит ли?',
+    'usp.u1.msg2':   'Понимаю — важное решение. Предлагаю попробовать без риска: если не подойдёт — просто не продолжаете.',
+    'usp.u1.chip1':  'Что значит без риска?',
+    'usp.u1.chip2':  'Что входит в цену?',
+    'usp.u2.tag':    'Идентичность',
     'usp.u2.title':  'Имя и характер задаёте вы',
     'usp.u2.desc':   'Клиенты не разговаривают с "ботом". Они общаются с Леной, Максом или Артёмом - вашим цифровым сотрудником, которого придумали сами.',
+    'usp.u3.tag':    'Простота',
     'usp.u3.title':  'Без программистов',
     'usp.u3.desc':   'Вы заполняете шаблон - мы настраиваем. Никакого кода, никаких технических знаний.',
+    'usp.u3.item1':  'Заполнить бриф о бизнесе',
+    'usp.u3.item2':  'Придумать имя и характер',
+    'usp.u3.item3':  'Писать код или настраивать API',
+    'usp.u3.item4':  'Нанимать разработчика',
 
     'cases.title':    'Реальные результаты',
     'cases.subtitle': 'Бизнесы, где уже работают наши боты',
@@ -88,6 +110,20 @@ const T = {
     'pricing.opt.turnkey.label': 'Под ключ',
     'pricing.opt.turnkey.desc':  'Берём всё на себя: разбираемся в вашем бизнесе, настраиваем характер, сценарии и логику бота. Вы просто рассказываете - мы делаем.',
     'pricing.note':     'Больше 100 обращений в день - 1 руб. за сообщение. Напишите, рассчитаем.',
+
+    'proof.v1':  '3 дня',
+    'proof.l1':  'от брифа до запуска под ключ',
+    'proof.v2':  '~3 сек',
+    'proof.l2':  'среднее время первого ответа',
+    'proof.l3':  'на связи без выходных и больничных',
+    'proof.v4':  'до 80%',
+    'proof.l4':  'обращений бот закрывает сам',
+
+    'calc.label':  'Сколько обращений в день у вас сейчас?',
+    'calc.unit':   'в&nbsp;день',
+    'calc.fits':   'Вам подойдёт тариф',
+    'calc.custom': 'Индивидуальный',
+    'calc.byrequest': 'по запросу',
 
     'team.title':     'Кто делает Saleon',
     'team.subtitle':  'Люди, которые создают ваших цифровых сотрудников',
@@ -118,7 +154,7 @@ const T = {
     'faq.q6':  'Клиенты не любят ботов.',
     'faq.a6':  'Клиенты не любят скучных ботов. Наш отвечает мгновенно, говорит живо, подстраивается под тон.',
     'faq.q7':  'Где работает бот?',
-    'faq.a7':  'Telegram, ВКонтакте, чат на сайте. Интегрируется с Bitrix24, amoCRM и другими системами.',
+    'faq.a7':  'Работает в CRM, Telegram, ВКонтакте, MAX и Instagram. Интегрируется с Bitrix24, amoCRM и другими системами.',
 
     'contact.title':   'Запишитесь на созвон',
     'contact.desc':    'Бесплатный созвон 30 минут - разберём вашу ситуацию, придумаем характер бота, покажем как это работает в вашей нише.',
@@ -148,6 +184,7 @@ const T = {
     'widget.placeholder': 'Написать...',
 
     'footer.tagline':      'Цифровые сотрудники с характером',
+    'footer.sign':         'сделано с характером ✦',
     'footer.col.product':  'Продукт',
     'footer.col.company':  'Компания',
     'footer.col.contacts': 'Контакты',
@@ -194,15 +231,17 @@ const T = {
     'nav.cta':       'Try now',
 
     'hero.eyebrow':      'AI staff with personality',
-    'hero.title':        'Meet your new<br>team member.',
+    'hero.title':        'Meet your new<br><span class="hl-mark">team member</span>.',
     'hero.lead':         'They have a name, a personality, and one mode: work. Won\'t quit, won\'t get sick, won\'t snap at a customer on Friday night.',
     'hero.cta1':         'Meet Saleon',
     'hero.cta2':         'See how it works',
     'hero.works':        'Works in:',
+    'scribble.hero':     'replies in 3 seconds,<br>even at night',
+    'scribble.price':    'most people pick this',
     'hero.ch.site':      'Website',
     'hero.visual.hint':  '+ 3 more characters with personality - below',
 
-    'pain.title':       'Sound familiar?',
+    'pain.title':       'Where businesses lose clients',
     'pain.p1.title':    'Leads come in at night',
     'pain.p1.desc':     'A client messaged at 11 PM - the manager sees it in the morning. By then they bought from a competitor.',
     'pain.p2.title':    '80% of questions are the same',
@@ -220,8 +259,8 @@ const T = {
     'personas.eyebrow':       'HOW SALEON WORKS',
     'personas.title':         'The bot knows what\'s happening with your client',
     'personas.subtitle':      'Choose a character and client state - see how a bot with personality responds at the right moment.',
-    'personas.choose.bot':    'CHOOSE A CHARACTER',
-    'personas.choose.state':  'CLIENT STATE',
+    'personas.choose.bot':    'Choose a character',
+    'personas.choose.state':  'Client state',
     'personas.cta':           'I want a bot like this for my business',
 
     'how.title':        'Launch in 3 days',
@@ -237,13 +276,33 @@ const T = {
     'turnkey.alt':    'Or set it up yourself using a template - no implementation fee.',
     'turnkey.cta':    'Discuss onboarding',
 
+    'pain.eyebrow':     'Pain points',
+    'how.eyebrow':      'Process',
+    'usp.eyebrow':      'Why us',
+    'cases.eyebrow':    'Cases',
+    'pricing.eyebrow':  'Pricing',
+    'team.eyebrow':     'Team',
+    'contact.eyebrow':  'Contact',
+
     'usp.title':     'What makes Saleon different',
+    'usp.u1.tag':    'Context',
     'usp.u1.title':  'Understands where the client is',
     'usp.u1.desc':   'Not one script for everyone. The bot sees client state and responds accordingly.',
+    'usp.u1.detect': 'Bot detects: client is hesitating',
+    'usp.u1.msg1':   'It\'s a bit pricey... not sure if it\'s worth it.',
+    'usp.u1.msg2':   'I understand — this is an important decision. Let me suggest a risk-free trial: if it doesn\'t work for you, just don\'t continue.',
+    'usp.u1.chip1':  'What does risk-free mean?',
+    'usp.u1.chip2':  'What\'s included?',
+    'usp.u2.tag':    'Identity',
     'usp.u2.title':  'You set the name and personality',
     'usp.u2.desc':   'Clients don\'t talk to a "bot". They talk to your digital employee with a personality you designed.',
+    'usp.u3.tag':    'Simplicity',
     'usp.u3.title':  'No developers needed',
     'usp.u3.desc':   'No code. You fill out a template - we set it up. No technical knowledge required.',
+    'usp.u3.item1':  'Fill out a business brief',
+    'usp.u3.item2':  'Choose a name and personality',
+    'usp.u3.item3':  'Write code or configure an API',
+    'usp.u3.item4':  'Hire a developer',
 
     'cases.title':    'Real results',
     'cases.subtitle': 'Businesses where our bots already work',
@@ -268,6 +327,20 @@ const T = {
     'pricing.opt.turnkey.label': 'Done for you',
     'pricing.opt.turnkey.desc':  'We handle everything: understand your business, configure the personality, scenarios and logic. You just tell us - we take care of the rest.',
     'pricing.note':     'More than 100 requests/day - 1 rub per message. Write to us for a quote.',
+
+    'proof.v1':  '3 days',
+    'proof.l1':  'from brief to a turnkey launch',
+    'proof.v2':  '~3 sec',
+    'proof.l2':  'average first reply time',
+    'proof.l3':  'online, no days off or sick leave',
+    'proof.v4':  'up to 80%',
+    'proof.l4':  'of requests the bot closes itself',
+
+    'calc.label':  'How many requests a day do you get now?',
+    'calc.unit':   'a&nbsp;day',
+    'calc.fits':   'Your plan would be',
+    'calc.custom': 'Custom',
+    'calc.byrequest': 'on request',
 
     'team.title':     'Who makes Saleon',
     'team.subtitle':  'The people who create your digital employees',
@@ -298,7 +371,7 @@ const T = {
     'faq.q6':  'Clients don\'t like bots.',
     'faq.a6':  'Clients don\'t like boring bots. Ours responds instantly, communicates naturally, adapts to the tone.',
     'faq.q7':  'Where does the bot work?',
-    'faq.a7':  'Telegram, VKontakte, website chat. Integrates with Bitrix24, amoCRM and other systems.',
+    'faq.a7':  'Works in CRM, Telegram, VKontakte, MAX and Instagram. Integrates with Bitrix24, amoCRM and other systems.',
 
     'contact.title':   'Book your free call',
     'contact.desc':    'Free 30-minute call - we\'ll analyze your situation, design a bot personality, show how it works in your niche.',
@@ -328,6 +401,7 @@ const T = {
     'widget.placeholder': 'Write your question...',
 
     'footer.tagline':      'Digital staff with personality',
+    'footer.sign':         'made with personality ✦',
     'footer.col.product':  'Product',
     'footer.col.company':  'Company',
     'footer.col.contacts': 'Contacts',
@@ -379,7 +453,7 @@ const BOTS = [
     charEn: 'Creative, inspires clients, speaks vividly. Knows everything about light and atmosphere.',
     color: '#D4537E',
     greet: 'красотка', greetEn: 'gorgeous',
-    emoji: 'С',
+    emoji: 'С', icon: 'images/СЭМ.png',
   },
   {
     id: 'padik',
@@ -389,7 +463,7 @@ const BOTS = [
     charEn: 'Sporty, energetic, talks like a buddy. Promotes an active lifestyle.',
     color: '#1D9E75',
     greet: 'дружище', greetEn: 'buddy',
-    emoji: 'П',
+    emoji: 'П', icon: 'images/ПАДИК.png',
   },
   {
     id: 'glasha',
@@ -399,7 +473,7 @@ const BOTS = [
     charEn: 'Warm, caring, helps choose flowers with heart. Knows the meaning of every bouquet.',
     color: '#D85A30',
     greet: 'дорогая', greetEn: 'dear',
-    emoji: 'Г',
+    emoji: 'Г', icon: 'images/ГЛАША.png',
   },
   {
     id: 'kirillych',
@@ -409,7 +483,7 @@ const BOTS = [
     charEn: 'Reliable, speaks simply and to the point. Like a mechanic you can trust.',
     color: '#5F5E5A',
     greet: 'друг', greetEn: 'friend',
-    emoji: 'К',
+    emoji: 'К', icon: 'images/КИРИЛЛЫЧ.png',
   },
   {
     id: 'lusya',
@@ -419,7 +493,7 @@ const BOTS = [
     charEn: 'Attentive, caring, understands clients intuitively. Expert in style and care.',
     color: '#993556',
     greet: 'подруга', greetEn: 'friend',
-    emoji: 'Л',
+    emoji: 'Л', icon: 'images/ЛЮСЯ.png',
   },
   {
     id: 'bars',
@@ -429,7 +503,7 @@ const BOTS = [
     charEn: 'Calm, professional, speaks with warmth. Knows how to reassure a worried pet owner.',
     color: '#0891B2',
     greet: 'друг', greetEn: 'friend',
-    emoji: 'Б',
+    emoji: 'Б', icon: 'images/БАРС.png',
   },
   {
     id: 'maks',
@@ -439,9 +513,17 @@ const BOTS = [
     charEn: 'Motivating, energetic, believes in every client. Speaks briefly and to the point.',
     color: '#185FA5',
     greet: 'чемпион', greetEn: 'champion',
-    emoji: 'М',
+    emoji: 'М', icon: 'images/МАКС.png',
   },
 ];
+
+/* avatar HTML helper — PNG icon if available, else first letter */
+function botAvHtml(b, size) {
+  if (b.icon) {
+    return '<img src="' + b.icon + '" alt="' + b.name + '" class="bot-av-icon" style="width:' + (size||'100%') + ';height:' + (size||'100%') + ';object-fit:cover;border-radius:50%;">';
+  }
+  return b.emoji;
+}
 
 /* ============================================================
    CLIENT STATES DATA
@@ -449,7 +531,7 @@ const BOTS = [
 const STATES = [
   {
     id: 'new',
-    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/></svg>',
     name: 'Первый раз',    nameEn: 'First time',
     intent: 'Написал впервые. Ещё не знает, что предложить.',
     intentEn: 'First contact. Doesn\'t know what to expect yet.',
@@ -463,7 +545,7 @@ const STATES = [
   },
   {
     id: 'explore',
-    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
     name: 'Изучает',    nameEn: 'Exploring',
     intent: 'Сравнивает варианты, задаёт вопросы о деталях.',
     intentEn: 'Comparing options, asking about details.',
@@ -477,7 +559,7 @@ const STATES = [
   },
   {
     id: 'doubt',
-    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/></svg>',
+    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/></svg>',
     name: 'Сомневается', nameEn: 'Hesitates',
     intent: 'Почти готов, но есть возражения или страхи.',
     intentEn: 'Almost ready, but has objections or fears.',
@@ -491,7 +573,7 @@ const STATES = [
   },
   {
     id: 'ready',
-    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>',
     name: 'Готов купить', nameEn: 'Ready to buy',
     intent: 'Уже решил, хочет оформить быстро.',
     intentEn: 'Already decided, wants to proceed quickly.',
@@ -505,7 +587,7 @@ const STATES = [
   },
   {
     id: 'gone',
-    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
     name: 'Пропал',   nameEn: 'Gone silent',
     intent: 'Общался, но перестал отвечать. Потерял интерес или забыл.',
     intentEn: 'Was chatting, then stopped. Lost interest or forgot.',
@@ -517,6 +599,105 @@ const STATES = [
     chipsEn: ['Yes, I\'m back', 'Tell me about the offer', 'Not relevant anymore'],
     badge: 'Реактивация', badgeEn: 'Reactivation',
   },
+];
+
+/* ============================================================
+   PERSONA CHIP REPLIES  [botIdx][stateIdx].ru / .en
+   States: 0=Первый раз, 1=Изучает, 2=Сомневается, 3=Готов купить, 4=Пропал
+   Bots:   0=СЭМ, 1=ПАДИК, 2=ГЛАША, 3=КИРИЛЛЫЧ, 4=ЛЮСЯ, 5=БАРС, 6=МАКС
+============================================================ */
+var PERSONA_CHIP_REPLIES = [
+  /* 0 – СЭМ (Фотостудия) */
+  [
+    { ru: { 'Расскажи подробнее': 'У нас два зала: белая циклорама — для чистых воздушных портретов, и тёмный лофт — для атмосферных съёмок. Реквизит, свет, гримёрка — всё включено!', 'Сколько стоит?': 'Час аренды от 1 500 руб. Если нужна команда — фотограф, визажист — добавим. Что планируешь снимать?', 'Как записаться?': 'Напиши дату, время и что будем снимать — я найду слот и оформлю. Когда удобно?' },
+      en: { 'Tell me more': 'We have two studios: white cyclorama for clean airy portraits, and dark loft for atmospheric shoots. Props, lights, dressing room — all included!', 'How much does it cost?': 'One hour rental from $18. Need a crew — photographer, makeup? We\'ll add them. What are we shooting?', 'How to sign up?': 'Just tell me the date, time and what we\'re shooting — I\'ll find a slot and book it. When works for you?' } },
+    { ru: { 'Показать примеры': 'Наши работы — в Telegram @sem_foto. Там портреты, бизнес-съёмки, детские и семейные. Какой жанр интересует?', 'Узнать цены': 'Час — 1 500 руб, 3 часа — 3 900 руб (выгоднее!). Свет и реквизит включены. Нужна команда — обговорим.', 'Записаться на пробное': 'Есть пробная сессия 30 минут — 600 руб. Познакомишься с залом, сделаем несколько кадров. Когда удобно?' },
+      en: { 'Show examples': 'Our work is in Telegram @sem_foto. Portraits, business shoots, family sessions. What genre interests you?', 'See pricing': 'One hour — $18, three hours — $48 (better value!). Lights and props included. Need a crew — we\'ll discuss.', 'Book a trial': 'We have a 30-minute trial session — $7. You\'ll see the studio and we\'ll shoot a few frames. When works for you?' } },
+    { ru: { 'Что включено в цену?': 'В аренду входит: студия, весь реквизит, профессиональный свет, гримёрка. Никаких скрытых доплат!', 'Есть ли гарантия?': 'Если съёмка не понравится — вернём деньги. За 3 года работы такого не было, но обещание твёрдое.', 'Можно попробовать?': 'Конечно! Есть пробная сессия 30 минут — минимальный риск, максимум впечатлений. Запишем?' },
+      en: { 'What\'s included?': 'Rental includes: studio, all props, professional lighting, dressing room. No hidden fees!', 'Is there a guarantee?': 'If the shoot doesn\'t satisfy you — full refund. In 3 years it\'s never happened, but the promise stands.', 'Can I try first?': 'Of course! 30-minute trial session — minimum risk, maximum experience. Shall we book it?' } },
+    { ru: { 'Выбрать время': 'Свободные слоты: завтра 14:00 и 17:00, послезавтра 11:00. Какой зал — светлый или тёмный лофт?', 'Оплатить онлайн': 'Принимаем карту онлайн или наличными. Напиши имя и дату — выставлю счёт прямо здесь.', 'Нужна помощь с выбором': 'Расскажи что снимаем — образ, тему, настроение — и я подберу зал, свет и реквизит под идею.' },
+      en: { 'Choose a time': 'Open slots: tomorrow 2 PM and 5 PM, day after at 11 AM. Which studio — bright cyclorama or dark loft?', 'Pay online': 'We accept card online or cash. Send your name and date — I\'ll issue an invoice right here.', 'Need help choosing': 'Tell me what we\'re shooting — the look, theme, mood — and I\'ll match the studio, lighting and props to your idea.' } },
+    { ru: { 'Да, хочу вернуться': 'Рад слышать! Твой слот ещё не занят. Что изменилось? Могу помочь с выбором зала или идеей съёмки.', 'Расскажи про предложение': 'Для тебя — скидка 20% на первую аренду. Работает ещё два дня. Час в лофте вместо 1 500 — за 1 200 руб. Берём?', 'Не актуально': 'Понял, бывает! Если вдруг захочется красивых кадров — я здесь. Удачи!' },
+      en: { 'Yes, I\'m back': 'Great to hear! Your slot is still open. What changed? I can help with studio choice or shoot concept.', 'Tell me about the offer': 'For you — 20% off your first rental. Valid for two more days. One hour in the loft for $15 instead of $18. Deal?', 'Not relevant anymore': 'No worries! When you want some great shots — I\'m here. Take care!' } },
+  ],
+  /* 1 – ПАДИК (Падел-центр) */
+  [
+    { ru: { 'Расскажи подробнее': 'Падел — теннис + сквош, только круче и проще в освоении! 3 корта, инвентарь в аренду, тренеры. Уже через час будешь рубиться!', 'Сколько стоит?': 'Час корта — 1 200 руб. на 2–4 игрока, то есть от 300 руб с человека! Ракетка бесплатно. Абонемент ещё выгоднее.', 'Как записаться?': 'Напиши сколько вас, день и примерное время — подберу корт и запишу. Минута дел!' },
+      en: { 'Tell me more': 'Padel is tennis + squash, but easier to pick up! 3 courts, rental gear, coaches. You\'ll be playing within an hour!', 'How much does it cost?': 'One court hour — $15 for 2–4 players, so from $4 per person! Racket free. Membership is even better value.', 'How to sign up?': 'Tell me how many, the day and rough time — I\'ll find a court and book you in. Done in a minute!' } },
+    { ru: { 'Показать примеры': 'Глянь видосы в @padik_court — матчи, тренировки, атмосфера. Один просмотр — и сам захочешь!', 'Узнать цены': 'Час корта — 1 200 руб., абонемент 8 часов — 7 200 руб., тренировка с тренером — 1 800 руб/час. Первый час — 600 руб!', 'Записаться на пробное': 'Пробный час за 600 руб с ракеткой — для тех, кто не пробовал. Тренер покажет азы и сразу начнём играть. Когда?' },
+      en: { 'Show examples': 'Check videos at @padik_court — matches, training, vibes. One look and you\'ll want to play!', 'See pricing': 'Court hour — $15, 8-hour membership — $90, coaching — $22/hour. First hour trial — just $7!', 'Book a trial': 'Trial hour for $7 with racket — for beginners. Coach shows the basics and we start playing immediately. When?' } },
+    { ru: { 'Что включено в цену?': 'В аренду корта входит: корт, мячи, ракетки. Ничего лишнего не платишь. Обувь в аренду — 100 руб если нужно.', 'Есть ли гарантия?': 'Если после первого часа не понравится — вернём деньги, без вопросов. Но такого ещё не было!', 'Можно попробовать?': 'Конечно! Пробный час за 600 руб — лучший старт. Минимум трат, максимум кайфа. Запишу?' },
+      en: { 'What\'s included?': 'Court rental includes: court, balls, rackets. Nothing extra. Shoe rental — $1.50 if needed.', 'Is there a guarantee?': 'If you don\'t enjoy your first hour — full refund, no questions. Never happened yet though!', 'Can I try first?': 'Of course! Trial hour for $7 — best start. Minimal cost, maximum fun. Book you in?' } },
+    { ru: { 'Выбрать время': 'Свободно: сегодня 19:00, завтра 10:00 и 18:00, суббота 12:00. Вас сколько будет?', 'Оплатить онлайн': 'Картой онлайн или на кассе. Напиши имя и время — выставлю ссылку для оплаты!', 'Нужна помощь с выбором': 'Для новичков — пробный час с тренером, для опытных — просто аренда корта. Вы раньше играли в падел?' },
+      en: { 'Choose a time': 'Open: today 7 PM, tomorrow 10 AM and 6 PM, Saturday 12 PM. How many players?', 'Pay online': 'Card online or at the desk. Send name and time — I\'ll send the payment link!', 'Need help choosing': 'For beginners — trial hour with coach; for experienced — just court rental. Have you played padel before?' } },
+    { ru: { 'Да, хочу вернуться': 'Дружище, ждали! Корты свободны — назови время и забронируем. Что остановило в прошлый раз?', 'Расскажи про предложение': 'Для тебя — 2 часа по цене 1! Обычно 1 200 руб/час, сейчас 2 часа за 1 200. До конца недели. Берём?', 'Не актуально': 'Без проблем, дружище! Как захочется поиграть — возвращайся. Мы всегда рады!' },
+      en: { 'Yes, I\'m back': 'Buddy, we missed you! Courts are open — give me a time and I\'ll book it. What stopped you last time?', 'Tell me about the offer': '2 hours for the price of 1! Usually $15/hour, now 2 hours for $15. Until end of week. Deal?', 'Not relevant anymore': 'No problem, buddy! When you want to play — come back. Always welcome!' } },
+  ],
+  /* 2 – ГЛАША (Цветочный магазин) */
+  [
+    { ru: { 'Расскажи подробнее': 'У нас живые цветы каждый день — пионы, розы, тюльпаны, экзотика. Делаем букеты под характер человека. Есть доставка. Что за повод?', 'Сколько стоит?': 'Букеты от 900 руб — небольшие нежные. Популярные варианты — 1 800–3 500 руб. Под бюджет подберу что-то настоящее. Сколько у нас?', 'Как записаться?': 'Напиши для кого, на какую дату и бюджет — соберу букет с душой. Самовывоз или доставка?' },
+      en: { 'Tell me more': 'Fresh flowers every day — peonies, roses, tulips, exotic blooms. We make bouquets to match a person\'s personality. Delivery available. What\'s the occasion?', 'How much does it cost?': 'Bouquets from $11 — small and delicate. Popular options — $22–$43. Tell me your budget and I\'ll create something special.', 'How to sign up?': 'Tell me: for whom, what date, budget — I\'ll craft a bouquet with soul. Pickup or delivery?' } },
+    { ru: { 'Показать примеры': 'Наши работы — в Instagram @glasha_flowers и Telegram. Много фото — портретные букеты, свадебные, для мам и подруг. Что ближе твоей идее?', 'Узнать цены': 'Маленький — от 900 руб, средний — 1 800–2 500, большой — от 3 500. Авторская упаковка и открытка — в подарок. Какой повод?', 'Записаться на пробное': 'Можно заехать и собрать букет самостоятельно с моей помощью! Платишь только за цветы. Хочешь попробовать?' },
+      en: { 'Show examples': 'Our work is on Instagram @glasha_flowers and Telegram. Lots of photos — portrait bouquets, wedding, for moms and friends. Which style feels closest?', 'See pricing': 'Small — from $11, medium — $22–$30, large — from $43. Signature wrapping and card — gift included. What\'s the occasion?', 'Book a trial': 'You can come in and assemble a bouquet yourself with my guidance! You only pay for the flowers. Want to try?' } },
+    { ru: { 'Что включено в цену?': 'В цену входит: цветы, авторская упаковка, зелень и декор, открытка. Доставка отдельно — 300 руб по городу. Всё честно!', 'Есть ли гарантия?': 'Цветы стоят минимум 5–7 дней при правильном уходе. Если завянут раньше — заменю. Всегда даю памятку по уходу.', 'Можно попробовать?': 'Начни с небольшого букета — от 900 руб. Увидишь качество и подход. Если понравится — вернёшься. Уверена!' },
+      en: { 'What\'s included?': 'Price includes: flowers, signature wrapping, greenery and décor, card. Delivery extra — $4 citywide. All honest!', 'Is there a guarantee?': 'Flowers last at least 5–7 days with proper care. If they wilt sooner — I\'ll replace them. Always include care instructions.', 'Can I try first?': 'Start with a small bouquet — from $11. You\'ll see the quality and approach. If you like it — you\'ll be back. I\'m sure!' } },
+    { ru: { 'Выбрать время': 'Скажи дату и примерное время — самовывоз или доставка? Букет соберу свежим к нужному моменту!', 'Оплатить онлайн': 'Принимаю карту, переводом или наличными. Напиши что заказываешь и дату — выставлю счёт!', 'Нужна помощь с выбором': 'Расскажи: для кого цветы, какой человек, какой повод — и я подберу букет с характером!' },
+      en: { 'Choose a time': 'Tell me the date and rough time — pickup or delivery? I\'ll have the bouquet freshly made for the right moment!', 'Pay online': 'I accept card or transfer. Tell me what you\'re ordering and the date — I\'ll send an invoice!', 'Need help choosing': 'Tell me: who are the flowers for, what kind of person, what occasion — and I\'ll pick a bouquet with character!' } },
+    { ru: { 'Да, хочу вернуться': 'Дорогая, рада слышать! Что интересует — тот же букет или что-то новое? Расскажи, подберу!', 'Расскажи про предложение': 'Для тебя — скидка 15% на следующий заказ и бесплатная открытка. До конца недели. Что будем делать?', 'Не актуально': 'Всё хорошо! Если понадобятся цветы с душой — я здесь. Хорошего дня!' },
+      en: { 'Yes, I\'m back': 'Dear, so glad! Same bouquet as before or something new? Tell me and I\'ll get it ready!', 'Tell me about the offer': '15% off your next order plus a free card. Until end of week. What shall we create?', 'Not relevant anymore': 'All good! When you need flowers made with love — I\'m here. Have a lovely day!' } },
+  ],
+  /* 3 – КИРИЛЛЫЧ (Автосервис) */
+  [
+    { ru: { 'Расскажи подробнее': 'Делаем всё: ТО, диагностика, тормоза, подвеска, кузов. Опыт 12 лет, работаем с любыми марками. Без накруток. Что за машина и что беспокоит?', 'Сколько стоит?': 'Диагностика — бесплатно. ТО от 3 500 руб, ремонт — по факту. Назови что случилось — скажу честную цену.', 'Как записаться?': 'Напиши марку машины, что беспокоит и когда удобно приехать. Найдём время.' },
+      en: { 'Tell me more': 'We do everything: servicing, diagnostics, brakes, suspension, bodywork. 12 years experience, all makes. No inflated prices. What\'s the car and what\'s wrong?', 'How much does it cost?': 'Diagnostics — free. Service from $43, repairs — after inspection. Tell me what happened — I\'ll give an honest price.', 'How to sign up?': 'Tell me your car make, what\'s wrong and when you can come. We\'ll find a time.' } },
+    { ru: { 'Показать примеры': 'Отзывы — в ВКонтакте и Яндекс.Картах. Там же фото работ. 12 лет без рекламы — только сарафанное радио.', 'Узнать цены': 'ТО — от 3 500 руб, тормоза — от 1 800 руб, подвеска — от 2 500 руб. Диагностика бесплатно. Что нужно?', 'Записаться на пробное': 'Приезжай на бесплатную диагностику — 20 минут. Посмотрим машину, расскажем что есть, что срочно, что подождёт.' },
+      en: { 'Show examples': 'Reviews on VK and 2GIS. Work photos there too. 12 years with no advertising — pure word of mouth.', 'See pricing': 'Service — from $43, brakes — from $22, suspension — from $30. Diagnostics free. What do you need?', 'Book a trial': 'Come for a free diagnostic — 20 minutes. We\'ll inspect the car and tell you what\'s there, what\'s urgent, what can wait.' } },
+    { ru: { 'Что включено в цену?': 'В стоимость работ входит: сама работа, расходники. Скрытых доплат нет. После — показываю всё что сделал.', 'Есть ли гарантия?': 'Гарантия на работы — 6 месяцев. На запчасти — по гарантии производителя. Если что не так — переделаем бесплатно.', 'Можно попробовать?': 'Приезжай на бесплатную диагностику — посмотрим машину и поймёшь, как работаем. Ни к чему не обязывает.' },
+      en: { 'What\'s included?': 'Price includes: labor and consumables. No hidden fees. Afterwards I show everything that was done.', 'Is there a guarantee?': 'Warranty on work — 6 months. On parts — manufacturer\'s warranty. If something\'s wrong — we redo it free.', 'Can I try first?': 'Come for a free diagnostic — you\'ll see how we work. No obligation.' } },
+    { ru: { 'Выбрать время': 'Свободно: завтра с 9:00, в пятницу с 10:00. Что за работы нужны — скажи, найдём нужный слот.', 'Оплатить онлайн': 'Принимаем карту, наличные, перевод. Скажи что надо сделать — выставлю счёт после диагностики.', 'Нужна помощь с выбором': 'Приезжай на диагностику — сам всё покажу и объясню что срочно, что можно отложить. Честно.' },
+      en: { 'Choose a time': 'Open: tomorrow from 9 AM, Friday from 10 AM. Tell me what needs doing — we\'ll find the right slot.', 'Pay online': 'Card, cash or transfer. Tell me what needs doing — I\'ll invoice after diagnostics.', 'Need help choosing': 'Come for diagnostics — I\'ll show and explain everything myself: what\'s urgent, what can wait. Straight talk.' } },
+    { ru: { 'Да, хочу вернуться': 'Добро! Что с машиной — та же проблема или что-то новое? Найдём время.', 'Расскажи про предложение': 'Для тебя — бесплатная диагностика + скидка 10% на первый ремонт. До конца месяца. Записать?', 'Не актуально': 'Понял. Если понадобится — пиши, разберёмся быстро.' },
+      en: { 'Yes, I\'m back': 'Good! Same issue with the car or something new? Let\'s find a time.', 'Tell me about the offer': 'For you — free diagnostics + 10% off first repair. Until end of month. Book it?', 'Not relevant anymore': 'Got it. If you need anything — write, we\'ll sort it fast.' } },
+  ],
+  /* 4 – ЛЮСЯ (Салон красоты) */
+  [
+    { ru: { 'Расскажи подробнее': 'Делаем стрижки, окрашивание, уходы, маникюр и педикюр. Мастера 5–10 лет опыта. Работаем без выходных с 9 до 21. Что тебя интересует?', 'Сколько стоит?': 'Стрижка от 1 200, окрашивание от 2 500, маникюр от 900. Скажи что нужно — назову точнее!', 'Как записаться?': 'Напиши что хочешь сделать и удобное время — подберу мастера и запишу. Всё просто!' },
+      en: { 'Tell me more': 'We do haircuts, coloring, treatments, manicure and pedicure. Stylists with 5–10 years experience. Open every day 9 AM – 9 PM. What interests you?', 'How much does it cost?': 'Haircut from $15, coloring from $30, manicure from $11. Tell me what you need — I\'ll give you the exact price!', 'How to sign up?': 'Tell me what you want done and a convenient time — I\'ll match a stylist and book you in. Super easy!' } },
+    { ru: { 'Показать примеры': 'Работы мастеров — в Instagram @lusya_beauty. Стрижки, окрашивания, укладки. Реальные клиенты!', 'Узнать цены': 'Стрижка от 1 200, балаяж от 4 500, ламинирование от 2 500, маникюр от 900. Хочешь полный прайс?', 'Записаться на пробное': 'Есть пробный уход за 590 руб — 20 минут, увлажнение и блеск. Идеально познакомиться с нашими мастерами.' },
+      en: { 'Show examples': 'Stylist work on Instagram @lusya_beauty. Haircuts, coloring, styling. Real clients!', 'See pricing': 'Haircut from $15, balayage from $55, lamination from $30, manicure from $11. Want the full price list?', 'Book a trial': 'Trial treatment for $7 — 20 minutes, hydration and shine. Perfect way to meet our stylists.' } },
+    { ru: { 'Что включено в цену?': 'В стоимость: работа мастера, профессиональные средства, мытьё и укладка. Без скрытых доплат!', 'Есть ли гарантия?': 'Если что-то не понравится — скажи сразу. Подправим бесплатно. Нам важно, чтобы ты вышла довольной!', 'Можно попробовать?': 'Запишись на стрижку или уход — сразу почувствуешь нашу работу. Страшно первый раз, но оно стоит!' },
+      en: { 'What\'s included?': 'Price includes: stylist\'s work, professional products, wash and blow-dry. No hidden fees!', 'Is there a guarantee?': 'If anything doesn\'t look right — tell us right away. We\'ll fix it free. Your happiness is what matters!', 'Can I try first?': 'Book a haircut or treatment — you\'ll feel our work right away. First time is scary but worth it!' } },
+    { ru: { 'Выбрать время': 'Свободно: завтра 11:00 и 15:30, послезавтра 10:00. К какому мастеру хочешь — или не важно?', 'Оплатить онлайн': 'Принимаем карту и переводом. Запишу и пришлю подтверждение. Имя и телефон?', 'Нужна помощь с выбором': 'Расскажи что хочешь изменить, какая сейчас длина и состояние волос — подберу мастера и процедуру!' },
+      en: { 'Choose a time': 'Available: tomorrow 11 AM and 3:30 PM, day after at 10 AM. Do you have a preferred stylist?', 'Pay online': 'Card or transfer. I\'ll book you and send a confirmation. Your name and phone?', 'Need help choosing': 'Tell me what you want to change, current length and hair condition — I\'ll match the right stylist and treatment!' } },
+    { ru: { 'Да, хочу вернуться': 'Рада слышать! У нас всё по-прежнему хорошо. Что хочешь сделать в этот раз?', 'Расскажи про предложение': 'Для тебя — скидка 20% на любую услугу. Только эта неделя. Хочешь — запишу прямо сейчас?', 'Не актуально': 'Хорошо, подруга! Если что — всегда здесь. Береги себя!' },
+      en: { 'Yes, I\'m back': 'So glad! Everything\'s still great here. What are you thinking of doing this time?', 'Tell me about the offer': '20% off any service — this week only. Want me to book you right now?', 'Not relevant anymore': 'No worries, friend! Whenever you need us — we\'re here. Take care!' } },
+  ],
+  /* 5 – БАРС (Ветклиника) */
+  [
+    { ru: { 'Расскажи подробнее': 'Лечим кошек, собак, грызунов и птиц. Работаем с 8:00 до 22:00, есть выездная служба. Средний опыт врача — 7 лет. Что беспокоит питомца?', 'Сколько стоит?': 'Первичный осмотр — 600 руб, вакцинация — от 400 руб, выезд на дом — 800 руб + осмотр. Что нужно?', 'Как записаться?': 'Напиши какое животное, что беспокоит и когда удобно. Найдём время к нужному врачу.' },
+      en: { 'Tell me more': 'We treat cats, dogs, rodents and birds. Open 8 AM – 10 PM, home visits available. Average vet experience — 7 years. What\'s concerning your pet?', 'How much does it cost?': 'First exam — $7, vaccination — from $5, home visit — $10 + exam fee. What do you need?', 'How to sign up?': 'Tell me the type of animal, the concern and when you\'re free. We\'ll find the right vet and time.' } },
+    { ru: { 'Показать примеры': 'Отзывы клиентов — в ВКонтакте и 2ГИС. Там реальные истории и фото наших пациентов. Там тепло!', 'Узнать цены': 'Осмотр — 600 руб, анализы от 300 руб, вакцинация от 400 руб, операции от 3 000 руб. Диагностика помогает не переплачивать.', 'Записаться на пробное': 'Первичный осмотр — 600 руб. Врач посмотрит питомца, ответит на вопросы, даст рекомендации. Когда удобно?' },
+      en: { 'Show examples': 'Client reviews on VK and 2GIS. Real stories and photos of our patients. Very heartwarming!', 'See pricing': 'Exam — $7, tests from $4, vaccination from $5, surgery from $37. A diagnostic prevents overpaying.', 'Book a trial': 'First exam — $7. The vet will check your pet, answer questions, give recommendations. When works for you?' } },
+    { ru: { 'Что включено в цену?': 'В осмотр входит: осмотр, первичная консультация, рекомендации. Если нужны анализы — скажем заранее. Без сюрпризов.', 'Есть ли гарантия?': 'Отвечаем за качество лечения. Если стало хуже — повторный осмотр бесплатно. Здоровье питомца — наш приоритет.', 'Можно попробовать?': 'Запишитесь на первичный осмотр за 600 руб — посмотрим питомца, познакомимся. Решение можно принять потом.' },
+      en: { 'What\'s included?': 'Exam includes: physical check, initial consultation, recommendations. If tests are needed — we tell you upfront. No surprises.', 'Is there a guarantee?': 'We stand behind our treatment quality. If the pet gets worse — free follow-up. Your pet\'s health is our priority.', 'Can I try first?': 'Book an initial exam for $7 — we\'ll check your pet and get acquainted. No commitment beyond that.' } },
+    { ru: { 'Выбрать время': 'Свободно: сегодня 17:00 и 19:30, завтра с 10:00. Как зовут питомца и какое животное?', 'Оплатить онлайн': 'Принимаем карту на месте или переводом. После осмотра выставим счёт — ничего лишнего.', 'Нужна помощь с выбором': 'Расскажите что беспокоит питомца — подскажу к какому специалисту лучше записаться и что взять с собой.' },
+      en: { 'Choose a time': 'Available: today 5 PM and 7:30 PM, tomorrow from 10 AM. What\'s your pet\'s name and species?', 'Pay online': 'Card on site or bank transfer. We\'ll invoice after the exam — nothing extra.', 'Need help choosing': 'Tell me what\'s concerning your pet — I\'ll advise which specialist to see and what to bring along.' } },
+    { ru: { 'Да, хочу вернуться': 'Рады слышать! Как ваш питомец сейчас? Запишем на удобное время.', 'Расскажи про предложение': 'Для вас — бесплатный повторный осмотр, если лечение продолжается. Плюс скидка 10% на анализы. Актуально?', 'Не актуально': 'Хорошо. Если понадобится помощь — мы здесь. Здоровья вашему питомцу!' },
+      en: { 'Yes, I\'m back': 'Glad to hear! How is your pet doing now? Let\'s find a convenient time.', 'Tell me about the offer': 'For you — free follow-up exam if treatment is ongoing. Plus 10% off lab tests. Does that help?', 'Not relevant anymore': 'Understood. If you need help — we\'re here. Wishing your pet good health!' } },
+  ],
+  /* 6 – МАКС (Фитнес-клуб) */
+  [
+    { ru: { 'Расскажи подробнее': 'У нас: тренажёрный зал, групповые программы, бассейн и персональные тренировки. Сертифицированные тренеры, топовое оборудование. Что хочешь прокачать?', 'Сколько стоит?': 'Месячный — 2 900 руб, 3 месяца — 6 900, годовой — 19 900. Персональная тренировка — 2 500 руб. Пробное занятие — бесплатно!', 'Как записаться?': 'Напиши когда хочешь прийти — утром или вечером. Оформим за минуту!' },
+      en: { 'Tell me more': 'We have: gym floor, group classes, pool and personal training. Certified coaches, top-tier equipment. What do you want to work on?', 'How much does it cost?': 'Monthly — $35, 3 months — $85, annual — $240. Personal training — $30. Trial session — free!', 'How to sign up?': 'Tell me when you want to come — morning or evening. Done in a minute!' } },
+    { ru: { 'Показать примеры': 'Загляни в Instagram @max_fitness — трансформации клиентов, тренировки, атмосфера зала. Там виден результат!', 'Узнать цены': 'Месячный — 2 900 руб, 3 месяца — 6 900 руб (экономия 900!), годовой — 19 900 руб. Пробное — бесплатно!', 'Записаться на пробное': 'Пробное — бесплатно! Потренируешься, познакомишься с тренером, посмотришь зал. Никаких обязательств. Когда приходишь?' },
+      en: { 'Show examples': 'Check Instagram @max_fitness — client transformations, workouts, gym atmosphere. The results speak for themselves!', 'See pricing': 'Monthly — $35, 3 months — $85 (save $20!), annual — $240. Trial — free!', 'Book a trial': 'Trial session — FREE! Train, meet the coach, see the gym. Zero obligation. When are you coming?' } },
+    { ru: { 'Что включено в цену?': 'В абонемент: всё оборудование, групповые занятия, раздевалка с душем. Персональный тренер — дополнительно. Никаких скрытых платежей!', 'Есть ли гарантия?': 'Если в первый месяц не понравится — вернём деньги. Без условий. Но уверен — ты останешься!', 'Можно попробовать?': 'Приходи на бесплатное пробное занятие — без денег, без обязательств. Одна тренировка — и всё поймёшь!' },
+      en: { 'What\'s included?': 'Membership includes: all equipment, group classes, changing room with shower. Personal trainer extra. No hidden fees!', 'Is there a guarantee?': 'If you\'re not satisfied in the first month — full refund. No conditions. But I\'m confident you\'ll stay!', 'Can I try first?': 'Come for a free trial session — no payment, no obligation. One workout and you\'ll know!' } },
+    { ru: { 'Выбрать время': 'Залетай: завтра утром 8:00 или вечером 19:00. Тренер тебя встретит. Имя для записи?', 'Оплатить онлайн': 'Картой онлайн или наличными на ресепшн. Напиши какой абонемент — выставлю ссылку!', 'Нужна помощь с выбором': 'Расскажи цель: похудеть, набрать мышцы, поддержать форму — подберу программу и тренера под тебя!' },
+      en: { 'Choose a time': 'Come on: tomorrow morning 8 AM or evening 7 PM. The coach will meet you. Name for the booking?', 'Pay online': 'Card online or cash at the desk. Tell me which membership — I\'ll send the payment link!', 'Need help choosing': 'Tell me your goal: lose weight, build muscle, stay fit — I\'ll pick the right program and coach for you!' } },
+    { ru: { 'Да, хочу вернуться': 'Чемпион, вернулся! Ждали! Прогресс никуда не делся. Когда заходишь?', 'Расскажи про предложение': 'Для тебя — месяц за 1 900 руб вместо 2 900! Специально, чтобы ты вернулся в ритм. Действует 48 часов. Оформляем?', 'Не актуально': 'Ок, чемпион! Когда захочешь вернуться в форму — мы здесь. Дверь открыта!' },
+      en: { 'Yes, I\'m back': 'Champion, you\'re back! We waited! Your progress is still there. When are you coming?', 'Tell me about the offer': 'For you — one month for $22 instead of $35! Specially to get you back in the rhythm. Valid 48 hours. Deal?', 'Not relevant anymore': 'Ok, champion! When you want to get back in shape — we\'re here. Door\'s always open!' } },
+  ],
 ];
 
 /* ============================================================
@@ -553,7 +734,7 @@ var HERO_CHATS = [
     msgs: [
       { who:'in', text:'Привет, хочу попробовать падел. Я вообще новичок' },
       { who:'out', text:'Дружище, это лучшее решение! Падел - самый быстро усваиваемый вид спорта. Уже через час будешь рубиться. Есть пробный слот завтра в 18:00 - залетай!' },
-      { who:'in', text:'А ракетку нужно своё брать?' },
+      { who:'in', text:'А ракетку нужно свою брать?' },
       { who:'out', text:'Нет, у нас всё есть - ракетки, мячи, аренда обуви. Просто приходи и играй. Записать тебя на завтра?' },
     ],
     chips: ['Да, записать!', 'Другое время', 'Цены'],
@@ -716,15 +897,19 @@ function renderHeroChat(idx) {
   var chat = HERO_CHATS[idx];
   var isEn = currentLang === 'en';
 
+  // set bot color CSS variable for message bubbles
+  mock.style.setProperty('--hcm-bot-color', b.color);
+
   // header
   var head = mock.querySelector('.hcm__head');
   if (head) {
-    head.querySelector('.hcm__av').textContent = b.emoji;
+    var av = head.querySelector('.hcm__av');
+    if (b.icon) { av.innerHTML = '<img src="' + b.icon + '" alt="' + b.name + '" class="bot-av-icon">'; }
+    else { av.textContent = b.emoji; }
     head.querySelector('.hcm__av').style.background = b.color;
     head.querySelector('.hcm__head-info strong').textContent = isEn ? b.nameEn : b.name;
     var infoSpan = head.querySelector('.hcm__head-info span');
-    var onlineLabel = isEn ? 'online' : 'онлайн';
-    infoSpan.innerHTML = (isEn ? b.bizEn : b.biz) + ' &nbsp;·&nbsp; <span class="hcm__online">' + onlineLabel + '</span>';
+    infoSpan.textContent = isEn ? b.bizEn : b.biz;
   }
 
   // update pill labels
@@ -843,7 +1028,7 @@ function renderBotSelector() {
     var bName = isEn ? b.nameEn : b.name;
     var bBiz  = isEn ? b.bizEn  : b.biz;
     return '<button class="bot-btn' + (i === curBot ? ' is-active' : '') + '" style="--bot-color:' + b.color + '" data-bot="' + i + '" aria-pressed="' + (i === curBot) + '" aria-label="' + bName + ' - ' + bBiz + '">' +
-      '<span class="bot-btn__av" style="background:' + b.color + '">' + b.emoji + '</span>' +
+      '<span class="bot-btn__av" style="background:' + b.color + '">' + botAvHtml(b) + '</span>' +
       '<span class="bot-btn__name">' + bName + '</span>' +
       '<span class="bot-btn__biz">' + bBiz + '</span>' +
       '</button>';
@@ -865,7 +1050,7 @@ function renderBotCharDesc() {
   var b = BOTS[curBot];
   var isEn = currentLang === 'en';
   el.innerHTML =
-    '<span class="bot-char-desc__av" style="background:' + b.color + '">' + b.emoji + '</span>' +
+    '<span class="bot-char-desc__av" style="background:' + b.color + '">' + botAvHtml(b) + '</span>' +
     '<div class="bot-char-desc__text">' +
       '<strong>' + (isEn ? b.nameEn : b.name) + '</strong>' +
       '<span class="bot-char-desc__biz">- ' + (isEn ? b.bizEn : b.biz) + '</span>' +
@@ -915,7 +1100,7 @@ function renderPersonaDetail() {
     '<div class="persona-card">' +
       '<div class="persona-card__top" style="--bot-color:' + b.color + '">' +
         '<div class="persona-card__top-left">' +
-          '<div class="persona-card__av" style="background:' + b.color + '">' + b.emoji + '</div>' +
+          '<div class="persona-card__av" style="background:' + b.color + '">' + botAvHtml(b) + '</div>' +
           '<div>' +
             '<div class="persona-card__name">' + bName + '</div>' +
             '<div class="persona-card__biz">' + bBiz + '</div>' +
@@ -928,7 +1113,7 @@ function renderPersonaDetail() {
       '</div>' +
       '<div class="persona-chat">' +
         '<div class="persona-chat__header">' +
-          '<div class="persona-chat__av" style="background:' + b.color + '">' + b.emoji + '</div>' +
+          '<div class="persona-chat__av" style="background:' + b.color + '">' + botAvHtml(b) + '</div>' +
           '<div>' +
             '<div class="persona-chat__bot-name">' + bName + '</div>' +
             '<div class="persona-chat__status">' + onlineLabel + '</div>' +
@@ -939,10 +1124,52 @@ function renderPersonaDetail() {
           '<div class="persona-msg persona-msg--bot" style="--bot-color:' + b.color + '"><span>' + bMsgFn(b) + '</span></div>' +
         '</div>' +
         '<div class="persona-chat__chips">' +
-          chips.map(function(c) { return '<button class="persona-chip">' + c + '</button>'; }).join('') +
+          chips.map(function(c) {
+            return '<button class="persona-chip" style="border-color:' + b.color + ';color:' + b.color + '">' + c + '</button>';
+          }).join('') +
         '</div>' +
       '</div>' +
     '</div>';
+
+  // Add click handlers to persona chips
+  var chatBody = el.querySelector('.persona-chat__body');
+  var chipsContainer = el.querySelector('.persona-chat__chips');
+  var botRepliesObj = PERSONA_CHIP_REPLIES[curBot] && PERSONA_CHIP_REPLIES[curBot][curState]
+    ? (isEn ? PERSONA_CHIP_REPLIES[curBot][curState].en : PERSONA_CHIP_REPLIES[curBot][curState].ru)
+    : {};
+
+  if (chipsContainer && chatBody) {
+    chipsContainer.querySelectorAll('.persona-chip').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var chipText = chip.textContent.trim();
+        chip.remove();
+
+        // user message
+        var userMsg = document.createElement('div');
+        userMsg.className = 'persona-msg persona-msg--user';
+        userMsg.innerHTML = '<span>' + chipText + '</span>';
+        chatBody.appendChild(userMsg);
+
+        // typing indicator
+        var typing = document.createElement('div');
+        typing.className = 'hcm__typing';
+        chatBody.appendChild(typing);
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        // bot reply after delay
+        var replyText = botRepliesObj[chipText] || (isEn ? 'Good question! Let me help you.' : 'Хороший вопрос! Сейчас расскажу.');
+        setTimeout(function() {
+          typing.remove();
+          var botMsg = document.createElement('div');
+          botMsg.className = 'persona-msg persona-msg--bot';
+          botMsg.innerHTML = '<span>' + replyText + '</span>';
+          chatBody.appendChild(botMsg);
+          chatBody.scrollTop = chatBody.scrollHeight;
+        }, 1200);
+      });
+    });
+  }
 }
 
 function initPersonas() {
@@ -1148,9 +1375,25 @@ function initReveal() {
   }
   var io = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
-      if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      el.classList.add('is-visible');
+      io.unobserve(el);
+
+      /* cascade children for a light, staggered entrance */
+      if (el.hasAttribute('data-stagger')) {
+        var kids = el.children;
+        var n = kids.length;
+        for (var i = 0; i < n; i++) {
+          kids[i].style.transitionDelay = (i * 0.075) + 's';
+        }
+        /* clear delays after entrance so hover stays snappy */
+        setTimeout(function() {
+          for (var j = 0; j < n; j++) { kids[j].style.transitionDelay = ''; }
+        }, 800 + n * 75 + 120);
+      }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
 }
 
@@ -1197,21 +1440,24 @@ function initHeader() {
     });
   }
 
-  /* active nav highlight on scroll */
-  var sections = ['personas', 'pricing', 'cases', 'contacts'];
-  var links    = document.querySelectorAll('.header__nav-link');
-  if (links.length && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          links.forEach(function(l) {
-            l.classList.toggle('is-active', l.getAttribute('href') === '#' + e.target.id);
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-    sections.forEach(function(id) { var s = document.getElementById(id); if (s) io.observe(s); });
+  /* active nav highlight — tracks which section covers the viewport centre */
+  var navSectionIds = ['personas', 'pricing', 'faq', 'contacts'];
+  var navLinks = document.querySelectorAll('.header__nav-link');
+  function updateActiveNav() {
+    var mid = window.scrollY + window.innerHeight * 0.45;
+    var active = null;
+    navSectionIds.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var top = el.offsetTop - 80;
+      if (mid >= top) active = id;
+    });
+    navLinks.forEach(function(l) {
+      l.classList.toggle('is-active', l.getAttribute('href') === '#' + active);
+    });
   }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 }
 
 /* ============================================================
@@ -1271,6 +1517,9 @@ function applyLang(lang) {
   if (heroActivePill >= 0) {
     renderHeroChat(heroActivePill);
   }
+  if (document.getElementById('calcRange')) {
+    updateCalc();
+  }
 }
 
 function initLangToggle() {
@@ -1317,9 +1566,102 @@ function initPopup() {
 }
 
 /* ============================================================
+   SCROLL HINT — fade out on scroll
+============================================================ */
+function initScrollHint() {
+  var hint = document.querySelector('.hero__scroll-hint');
+  if (!hint) return;
+  window.addEventListener('scroll', function() {
+    var gone = window.scrollY > 60;
+    hint.style.opacity  = gone ? '0' : '';
+    hint.style.pointerEvents = gone ? 'none' : '';
+  }, { passive: true });
+}
+
+/* ============================================================
+   STAT COUNTERS — animate from 0 to target when in viewport
+============================================================ */
+function initStatCounters() {
+  var nums = document.querySelectorAll('.stat-num[data-target]');
+  if (!nums.length) return;
+
+  var observed = new Set();
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      if (observed.has(el)) return;
+      observed.add(el);
+
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var duration = 1200; /* ms */
+      var start = null;
+
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        var progress = Math.min((timestamp - start) / duration, 1);
+        /* ease-out cubic */
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target);
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target;
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.4 });
+
+  nums.forEach(function(el) { observer.observe(el); });
+}
+
+/* ============================================================
+   PRICING CALCULATOR — slider picks the matching plan
+============================================================ */
+function updateCalc() {
+  var range = document.getElementById('calcRange');
+  if (!range) return;
+  var valEl   = document.getElementById('calcVal');
+  var planEl  = document.getElementById('calcPlan');
+  var priceEl = document.getElementById('calcPrice');
+  var rubEl   = document.getElementById('calcRub');
+  var cards   = document.querySelectorAll('.pricing-card[data-plan]');
+  var dict    = T[currentLang] || T.ru;
+
+  var v = parseInt(range.value, 10);
+  var plan, name, price, custom = false;
+  if (v <= 20)       { plan = 'min';  name = dict['plan1.name']; price = '10 000'; }
+  else if (v <= 50)  { plan = 'mid';  name = dict['plan2.name']; price = '20 000'; }
+  else if (v <= 100) { plan = 'prem'; name = dict['plan3.name']; price = '30 000'; }
+  else               { plan = 'prem'; name = dict['calc.custom']; custom = true; }
+
+  if (valEl)   valEl.textContent = (v >= 120 ? '120+' : v);
+  if (planEl)  planEl.textContent = name;
+  if (priceEl) priceEl.textContent = custom ? dict['calc.byrequest'] : price;
+  if (rubEl)   rubEl.style.display = custom ? 'none' : '';
+
+  cards.forEach(function(c) {
+    c.classList.toggle('pricing-card--match', c.dataset.plan === plan);
+  });
+
+  var pct = (v - range.min) / (range.max - range.min) * 100;
+  range.style.setProperty('--calc-pct', pct + '%');
+}
+
+function initCalc() {
+  var range = document.getElementById('calcRange');
+  if (!range) return;
+  range.addEventListener('input', updateCalc);
+  updateCalc();
+}
+
+/* ============================================================
    INIT
 ============================================================ */
 document.addEventListener('DOMContentLoaded', function() {
+  initCalc();
   initHeader();
   initLangToggle();
   initReveal();
@@ -1332,4 +1674,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initMobileCTA();
   initSmoothScroll();
   initPopup();
+  initStatCounters();
+  initScrollHint();
 });
