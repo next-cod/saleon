@@ -453,7 +453,7 @@ const BOTS = [
     charEn: 'Creative, inspires clients, speaks vividly. Knows everything about light and atmosphere.',
     color: '#D4537E',
     greet: 'красотка', greetEn: 'gorgeous',
-    emoji: 'С', icon: 'images/СЭМ.png',
+    emoji: 'С', icon: 'images/sem.png',
   },
   {
     id: 'padik',
@@ -463,7 +463,7 @@ const BOTS = [
     charEn: 'Sporty, energetic, talks like a buddy. Promotes an active lifestyle.',
     color: '#1D9E75',
     greet: 'дружище', greetEn: 'buddy',
-    emoji: 'П', icon: 'images/ПАДИК.png',
+    emoji: 'П', icon: 'images/padik.png',
   },
   {
     id: 'glasha',
@@ -473,7 +473,7 @@ const BOTS = [
     charEn: 'Warm, caring, helps choose flowers with heart. Knows the meaning of every bouquet.',
     color: '#D85A30',
     greet: 'дорогая', greetEn: 'dear',
-    emoji: 'Г', icon: 'images/ГЛАША.png',
+    emoji: 'Г', icon: 'images/glasha.png',
   },
   {
     id: 'kirillych',
@@ -483,7 +483,7 @@ const BOTS = [
     charEn: 'Reliable, speaks simply and to the point. Like a mechanic you can trust.',
     color: '#5F5E5A',
     greet: 'друг', greetEn: 'friend',
-    emoji: 'К', icon: 'images/КИРИЛЛЫЧ.png',
+    emoji: 'К', icon: 'images/kirillych.png',
   },
   {
     id: 'lusya',
@@ -493,7 +493,7 @@ const BOTS = [
     charEn: 'Attentive, caring, understands clients intuitively. Expert in style and care.',
     color: '#993556',
     greet: 'подруга', greetEn: 'friend',
-    emoji: 'Л', icon: 'images/ЛЮСЯ.png',
+    emoji: 'Л', icon: 'images/lusya.png',
   },
   {
     id: 'bars',
@@ -503,7 +503,7 @@ const BOTS = [
     charEn: 'Calm, professional, speaks with warmth. Knows how to reassure a worried pet owner.',
     color: '#0891B2',
     greet: 'друг', greetEn: 'friend',
-    emoji: 'Б', icon: 'images/БАРС.png',
+    emoji: 'Б', icon: 'images/bars.png',
   },
   {
     id: 'maks',
@@ -513,7 +513,7 @@ const BOTS = [
     charEn: 'Motivating, energetic, believes in every client. Speaks briefly and to the point.',
     color: '#185FA5',
     greet: 'чемпион', greetEn: 'champion',
-    emoji: 'М', icon: 'images/МАКС.png',
+    emoji: 'М', icon: 'images/maks.png',
   },
 ];
 
