@@ -2491,8 +2491,8 @@ html { background: var(--s1); }
   .footer__top { grid-template-columns: 1fr; gap: 28px; }
 
   /* Hero: show chat mock on mobile too */
-  .hero__visual { display: block; }
-  .hero__bots-row { display: flex; }
+  .hero__visual { display: block !important; }
+  .hero__bots-row { display: flex !important; }
 
   /* USP: single column */
   .usp-feature { grid-template-columns: 1fr; gap: 16px; padding: 26px 0; }
@@ -2573,7 +2573,8 @@ html { background: var(--s1); }
    iPhone SE · mini · 13 · 14 · 15 · most Android
 ───────────────────────────────────────────────────── */
 @media (max-width: 430px) {
-  /* Hero: compact, buttons full width */
+  /* Hero: compact, buttons full width — chat always visible */
+  .hero__visual { display: block !important; }
   .hero__inner  { gap: 20px; }
   .hero__lead   { max-width: 100%; }
   .hero__actions { flex-direction: column; gap: 8px; }
