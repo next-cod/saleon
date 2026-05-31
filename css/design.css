@@ -1,0 +1,673 @@
+/* ============================================================
+   SALEON — design.css  v4.0  Deep Tech Layer
+   Loaded after styles.css — overrides visuals only.
+   Color palette unchanged. Rollback: remove <link> in HTML.
+============================================================ */
+
+/* ── NEW DESIGN TOKENS ── */
+:root {
+  --grad-blue:   linear-gradient(135deg, #2455F5 0%, #1233CC 100%);
+  --grad-text:   linear-gradient(135deg, #7EB3FF 0%, #2455F5 50%, #818CF8 100%);
+  --grad-glow:   linear-gradient(135deg, #2455F5 0%, #0E2AB0 100%);
+  --night-mid:   #0A0D1F;
+  --glass-bg:    rgba(255,255,255,.055);
+  --glass-bd:    rgba(255,255,255,.1);
+  --glow-blue:   0 0 40px rgba(36,85,245,.35);
+  --glow-card:   0 0 0 1px rgba(36,85,245,.12), 0 16px 48px rgba(36,85,245,.12);
+}
+
+/* ── GRADIENT TEXT helper ── */
+.grad-text {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* ============================================================
+   SECTION EYEBROWS — unhide + gradient
+============================================================ */
+.section-eyebrow {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  flex-shrink: 0;
+  background: var(--grad-blue);
+  border-radius: 2px;
+  /* SVG background-clip:text doesn't apply to ::before — use separate element */
+  -webkit-text-fill-color: initial;
+}
+/* Override gradient text on dark-bg eyebrows so they stay readable */
+.how-section .section-eyebrow,
+.contact-section .section-eyebrow {
+  background: none;
+  -webkit-text-fill-color: rgba(160,190,255,.75);
+}
+.how-section .section-eyebrow::before,
+.contact-section .section-eyebrow::before {
+  background: rgba(160,190,255,.45);
+}
+
+
+/* ============================================================
+   HEADER  — frosted with subtle blue tint on scroll
+============================================================ */
+.header.is-scrolled {
+  background: rgba(9,12,28,.85) !important;
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-bottom-color: rgba(255,255,255,.07) !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 4px 24px rgba(0,0,0,.25) !important;
+}
+.header.is-scrolled .header__brand { color: #fff; }
+.header.is-scrolled .header__nav-link { color: rgba(255,255,255,.65); }
+.header.is-scrolled .header__nav-link.is-active,
+.header.is-scrolled .header__nav-link:hover { color: #fff; }
+.header.is-scrolled .lang-toggle { color: rgba(255,255,255,.55); }
+.header.is-scrolled .lang-toggle__opt.is-active { color: #fff; }
+
+
+/* ============================================================
+   HERO — dark mesh, glass chat, gradient text
+============================================================ */
+.hero {
+  background: var(--night) !important;
+  overflow: hidden;
+}
+
+/* Mesh gradient background */
+.hero__glow--1 {
+  display: block !important;
+  width: 820px !important;
+  height: 820px !important;
+  top: -280px !important;
+  left: -200px !important;
+  background: radial-gradient(circle, rgba(36,85,245,.28) 0%, transparent 65%) !important;
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  animation: glow-drift 14s ease-in-out infinite !important;
+}
+.hero__glow--2 {
+  display: block !important;
+  width: 640px !important;
+  height: 640px !important;
+  bottom: -220px !important;
+  right: -120px !important;
+  top: auto !important;
+  left: auto !important;
+  background: radial-gradient(circle, rgba(36,85,245,.18) 0%, transparent 65%) !important;
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  animation: glow-drift 18s ease-in-out infinite reverse !important;
+}
+
+/* Subtle grid overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 52px 52px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Text colours on dark hero */
+.hero__eyebrow {
+  background: rgba(36,85,245,.18);
+  border: 1px solid rgba(36,85,245,.3);
+  padding: 5px 14px;
+  border-radius: 100px;
+  color: rgba(160,190,255,.9) !important;
+  font-size: 12px;
+}
+.hero__title { color: #fff !important; }
+.hero__lead  { color: rgba(255,255,255,.58) !important; }
+
+/* Gradient "сотрудник" — replace marker underline with gradient text */
+.hl-mark {
+  background-image: var(--grad-text) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  background-size: 100% 100% !important;
+  background-position: 0 0 !important;
+  padding: 0 .04em !important;
+  border-radius: 0 !important;
+}
+/* Always visible (no background-size 0 animation — use opacity) */
+.hero__content .hl-mark { opacity: 0; transition: opacity .8s ease .35s; }
+.hero__content.is-visible .hl-mark { opacity: 1; }
+
+/* Channel chips */
+.hero__channels-label { color: rgba(255,255,255,.35); }
+.hero__channel {
+  background: rgba(255,255,255,.07) !important;
+  border-color: rgba(255,255,255,.1) !important;
+  color: rgba(255,255,255,.7) !important;
+}
+
+/* Ghost button */
+.hero .btn--ghost-white {
+  background: rgba(255,255,255,.07) !important;
+  border-color: rgba(255,255,255,.14) !important;
+  color: rgba(255,255,255,.8) !important;
+}
+.hero .btn--ghost-white:hover {
+  background: rgba(255,255,255,.13) !important;
+  border-color: rgba(255,255,255,.25) !important;
+  color: #fff !important;
+}
+
+/* Scroll-hint on dark */
+.hero__scroll-hint { color: rgba(255,255,255,.3); }
+
+/* Scribble notes */
+.scribble__text { color: rgba(160,190,255,.88) !important; }
+.scribble__arrow { color: rgba(160,190,255,.88) !important; }
+
+/* ── Chat mock — glass card ── */
+.hero__chat-mock {
+  background: rgba(15,20,46,.55) !important;
+  border: 1px solid rgba(255,255,255,.1) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.05),
+    0 2px 4px rgba(0,0,0,.2),
+    0 20px 60px rgba(0,0,0,.45),
+    0 0 80px rgba(36,85,245,.12) !important;
+}
+.hcm__head {
+  background: rgba(255,255,255,.04) !important;
+  border-bottom-color: rgba(255,255,255,.07) !important;
+  text-align: left !important;
+}
+.hcm__head-info strong { color: rgba(255,255,255,.9) !important; }
+.hcm__head-info span   { color: rgba(255,255,255,.4) !important; }
+.hcm__body { background: transparent !important; }
+
+/* Incoming messages on dark */
+.hcm__msg--in {
+  background: rgba(255,255,255,.09) !important;
+  border-color: transparent !important;
+  color: rgba(255,255,255,.82) !important;
+}
+/* Typing dots on dark */
+.hcm__typing span { background: rgba(255,255,255,.45) !important; }
+
+/* Chips area */
+.hcm__chips {
+  background: rgba(255,255,255,.03) !important;
+  border-top-color: rgba(255,255,255,.06) !important;
+  padding-top: 10px !important;
+  padding-bottom: 12px !important;
+}
+.hcm__chip {
+  border-color: rgba(36,85,245,.4) !important;
+  color: rgba(140,175,255,.9) !important;
+  background: rgba(36,85,245,.08) !important;
+}
+.hcm__chip:hover {
+  background: rgba(36,85,245,.18) !important;
+  border-color: rgba(36,85,245,.65) !important;
+}
+
+/* Bot pills */
+.hero__bot-pill {
+  background: rgba(255,255,255,.07) !important;
+  border-color: rgba(255,255,255,.1) !important;
+  color: rgba(255,255,255,.65) !important;
+}
+.hero__bot-pill--active {
+  background: rgba(255,255,255,.12) !important;
+  border-color: var(--col, var(--blue)) !important;
+  color: #fff !important;
+  box-shadow: 0 0 14px rgba(36,85,245,.4) !important;
+}
+
+/* Hero decoration on dark */
+.hero__decoration { opacity: .14 !important; color: rgba(140,180,255,.9); }
+
+
+/* ============================================================
+   PROOF BAR — dark with gradient numbers
+============================================================ */
+.proofbar {
+  background: linear-gradient(135deg, #0B0F24 0%, #0E1430 100%) !important;
+  border-top-color: rgba(255,255,255,.06) !important;
+  border-bottom-color: rgba(255,255,255,.06) !important;
+}
+.proofbar__num {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.proofbar__label { color: rgba(255,255,255,.4); }
+.proofbar__item + .proofbar__item::before { background: rgba(255,255,255,.08) !important; }
+
+
+/* ============================================================
+   SECTION DIVIDERS
+============================================================ */
+.section-divider {
+  background: linear-gradient(90deg, transparent, rgba(36,85,245,.2), transparent) !important;
+}
+.section-divider__dot {
+  background: var(--blue) !important;
+  box-shadow: 0 0 8px rgba(36,85,245,.6);
+}
+
+
+/* ============================================================
+   PAIN SECTION — gradient icon backgrounds, glowing hover
+============================================================ */
+.pain-section { background: var(--s0); }
+
+.pain-card {
+  background: #fff !important;
+  transition: transform .24s var(--ease-out), box-shadow .24s ease, border-color .24s ease !important;
+}
+.pain-card:hover {
+  border-color: rgba(36,85,245,.25) !important;
+  box-shadow: var(--glow-card) !important;
+  transform: translateY(-4px) !important;
+}
+
+.pain-card__icon {
+  background: linear-gradient(135deg, rgba(36,85,245,.14) 0%, rgba(36,85,245,.05) 100%) !important;
+  border: 1px solid rgba(36,85,245,.12);
+  transition: background .3s ease, box-shadow .3s ease !important;
+}
+.pain-card:hover .pain-card__icon {
+  background: var(--grad-blue) !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  box-shadow: 0 0 22px rgba(36,85,245,.45) !important;
+}
+
+.pain-card__num {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Wide pain cards (bento accent) */
+.pain-grid .pain-card:nth-child(2),
+.pain-grid .pain-card:nth-child(4) {
+  background: linear-gradient(145deg, #fafbff 0%, #f2f4ff 100%) !important;
+  border-color: rgba(36,85,245,.12) !important;
+}
+
+
+/* ============================================================
+   BUTTONS — gradient primary with glow
+============================================================ */
+.btn--primary {
+  background: var(--grad-blue) !important;
+  box-shadow: 0 4px 20px -4px rgba(36,85,245,.55) !important;
+  border-color: transparent !important;
+  transition: transform .16s var(--ease-out), box-shadow .16s ease, filter .16s ease !important;
+}
+.btn--primary:hover {
+  filter: brightness(1.12) !important;
+  box-shadow: 0 8px 32px -4px rgba(36,85,245,.7) !important;
+  transform: translateY(-2px) !important;
+}
+.btn--primary:active { transform: scale(.97) !important; filter: brightness(.96) !important; }
+
+
+/* ============================================================
+   PERSONAS SECTION
+============================================================ */
+.bot-btn.is-active {
+  border-color: var(--bot-color, var(--blue)) !important;
+  box-shadow: 0 0 0 1px var(--bot-color, var(--blue)),
+              0 0 18px rgba(36,85,245,.25) !important;
+}
+
+.persona-detail {
+  box-shadow: 0 0 0 1px rgba(36,85,245,.1), var(--sh-lg) !important;
+}
+
+/* Persona chips */
+.persona-chip {
+  transition: background .2s ease, transform .2s var(--ease-out) !important;
+}
+.persona-chip:hover {
+  background: rgba(36,85,245,.06) !important;
+  transform: translateY(-2px) !important;
+}
+
+
+/* ============================================================
+   HOW SECTION — dark with gradient step numbers
+============================================================ */
+.how-section {
+  background: var(--night) !important;
+  position: relative;
+  overflow: hidden;
+}
+.how-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 80% at 90% 50%, rgba(36,85,245,.2) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 10% 20%, rgba(36,85,245,.1) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.how-section .container { position: relative; z-index: 1; }
+
+.how-section .section-title { color: #fff !important; }
+.how-section .step-item { border-bottom-color: rgba(255,255,255,.07) !important; }
+.how-section .step-item h3 { color: rgba(255,255,255,.9) !important; }
+.how-section .step-item p { color: rgba(255,255,255,.48) !important; }
+
+.how-section .step-item__num {
+  background: linear-gradient(135deg, rgba(36,85,245,.22) 0%, rgba(36,85,245,.08) 100%) !important;
+  border-color: rgba(36,85,245,.3) !important;
+  color: rgba(160,190,255,.85) !important;
+}
+
+/* Turnkey card glass */
+.turnkey-card {
+  background: rgba(255,255,255,.05) !important;
+  border: 1px solid rgba(255,255,255,.1) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 0 0 1px rgba(36,85,245,.12), 0 20px 40px rgba(0,0,0,.25) !important;
+}
+.turnkey-card h3 { color: #fff !important; }
+.turnkey-card p  { color: rgba(255,255,255,.5) !important; }
+.turnkey-card__alt { color: rgba(255,255,255,.35) !important; }
+.how-section .how-decoration { opacity: .1 !important; color: rgba(140,180,255,.8); }
+
+
+/* ============================================================
+   USP SECTION
+============================================================ */
+.usp-section { background: var(--s1) !important; }
+
+/* Chat demo widget border */
+.usp-feature__widget {
+  box-shadow: var(--glow-card) !important;
+  border-radius: var(--r-lg) !important;
+  overflow: hidden !important;
+}
+
+.usp-cd-detect {
+  background: linear-gradient(135deg, rgba(36,85,245,.12), rgba(36,85,245,.05)) !important;
+  border: 1px solid rgba(36,85,245,.18) !important;
+  color: var(--blue) !important;
+  font-weight: 600 !important;
+}
+
+.usp-setup-item--yes .usp-setup-icon circle { stroke: #2455F5 !important; }
+.usp-cd-chip {
+  border-color: rgba(36,85,245,.25) !important;
+  background: rgba(36,85,245,.05) !important;
+}
+
+
+/* ============================================================
+   CASES SECTION
+============================================================ */
+.case-card {
+  background: linear-gradient(145deg, #fff 0%, #f8f9ff 100%) !important;
+  border-color: rgba(36,85,245,.1) !important;
+  box-shadow: 0 2px 12px rgba(36,85,245,.06) !important;
+}
+.case-card:hover {
+  border-color: rgba(36,85,245,.22) !important;
+  box-shadow: var(--glow-card) !important;
+}
+
+.case-result strong {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+
+/* ============================================================
+   PRICING SECTION
+============================================================ */
+.pricing-section { background: var(--s1) !important; }
+
+/* Featured (recommended) card */
+.pricing-card--featured {
+  background: linear-gradient(150deg, #2455F5 0%, #1233CC 55%, #0B1D9E 100%) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.12),
+    0 24px 60px -8px rgba(36,85,245,.65),
+    0 4px 16px rgba(0,0,0,.2) !important;
+}
+.pricing-card--featured:hover {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.18),
+    0 32px 72px -6px rgba(36,85,245,.75),
+    0 4px 16px rgba(0,0,0,.2) !important;
+}
+
+/* Calc slider */
+.calc {
+  box-shadow: 0 0 0 1px rgba(36,85,245,.1), var(--sh-md) !important;
+}
+.calc__result-price strong {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* ============================================================
+   TEAM SECTION
+============================================================ */
+.team-section { background: var(--s0); }
+
+.team-card__photo {
+  box-shadow: var(--sh-sm) !important;
+}
+
+/* Overlay — gradient instead of flat dark */
+.team-card__overlay {
+  background: linear-gradient(165deg, rgba(36,85,245,.93) 0%, rgba(10,18,80,.96) 55%, rgba(8,12,40,.97) 100%) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+
+/* ============================================================
+   FAQ SECTION
+============================================================ */
+.faq-section {
+  background: linear-gradient(180deg, var(--s1) 0%, var(--s0) 100%) !important;
+}
+
+.faq-item {
+  border-radius: var(--r-md);
+  transition: background .25s ease;
+}
+.faq-item.is-open {
+  background: linear-gradient(135deg, rgba(36,85,245,.05) 0%, rgba(36,85,245,.02) 100%);
+}
+.faq-item.is-open .faq-item__q {
+  color: var(--blue) !important;
+}
+
+.faq-arrow {
+  background: var(--grad-blue);
+  border-radius: 100px;
+  padding: 2px;
+  color: #fff !important;
+  width: 22px !important;
+  height: 22px !important;
+  flex-shrink: 0;
+}
+.faq-arrow path { stroke: #fff !important; }
+
+.faq-section__head .section-title { text-align: center; }
+
+
+/* ============================================================
+   CONTACT / FINAL CTA — dark gradient
+============================================================ */
+.contact-section {
+  background: linear-gradient(150deg, var(--night) 0%, #0C1226 40%, var(--night2) 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at -5% 60%, rgba(36,85,245,.28) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 105% 30%, rgba(36,85,245,.15) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+.contact-section .container { position: relative; z-index: 1; }
+
+.contact-section h2 { color: #fff !important; }
+.contact-info p     { color: rgba(255,255,255,.52) !important; }
+.stat-num {
+  background: var(--grad-text) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label { color: rgba(255,255,255,.38) !important; }
+.contact-author__text strong { color: #fff !important; }
+.contact-author__text span   { color: rgba(255,255,255,.42) !important; }
+.contact-author__photo { box-shadow: 0 0 0 3px rgba(36,85,245,.35), var(--sh-md) !important; }
+.contact-author__letter { color: rgba(160,190,255,.8) !important; }
+
+/* Glass form */
+.contact-form {
+  background: rgba(255,255,255,.05) !important;
+  border: 1px solid rgba(255,255,255,.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: var(--r-xl) !important;
+  box-shadow: 0 0 0 1px rgba(36,85,245,.1), 0 24px 48px rgba(0,0,0,.25) !important;
+}
+.contact-form label { color: rgba(255,255,255,.55) !important; }
+.contact-form input,
+.contact-form select {
+  background: rgba(255,255,255,.07) !important;
+  border-color: rgba(255,255,255,.1) !important;
+  color: #fff !important;
+  border-radius: var(--r-sm) !important;
+}
+.contact-form input:focus,
+.contact-form select:focus {
+  border-color: rgba(36,85,245,.6) !important;
+  background: rgba(36,85,245,.08) !important;
+  box-shadow: 0 0 0 3px rgba(36,85,245,.15) !important;
+}
+.contact-form input::placeholder { color: rgba(255,255,255,.22) !important; }
+.form-select-arrow { filter: invert(1) opacity(.4); }
+.form-select-wrap select option { background: var(--night2); color: #fff; }
+.form-privacy        { color: rgba(255,255,255,.28) !important; }
+.form-privacy a      { color: rgba(160,190,255,.55) !important; }
+.contact-alt         { color: rgba(255,255,255,.32) !important; }
+.contact-alt__link   { color: rgba(160,190,255,.65) !important; }
+
+
+/* ============================================================
+   FOOTER — deep dark
+============================================================ */
+.footer { background: #05060F !important; }
+.footer__bottom { border-top-color: rgba(255,255,255,.05) !important; }
+.footer__sign { opacity: .65; }
+
+
+/* ============================================================
+   CHAT TRIGGER & MOBILE CTA
+============================================================ */
+.chat-trigger__btn {
+  background: var(--grad-blue) !important;
+  box-shadow: 0 4px 20px -4px rgba(36,85,245,.6), var(--sh-blue) !important;
+}
+.chat-trigger__btn:hover {
+  box-shadow: 0 8px 28px -4px rgba(36,85,245,.75) !important;
+}
+
+.mobile-cta.is-visible {
+  background: var(--grad-blue) !important;
+  box-shadow: 0 -4px 20px rgba(36,85,245,.3) !important;
+}
+
+
+/* ============================================================
+   POPUP
+============================================================ */
+.popup {
+  box-shadow: 0 0 0 1px rgba(36,85,245,.1), 0 32px 80px rgba(0,0,0,.18) !important;
+}
+
+
+/* ============================================================
+   MISC POLISH
+============================================================ */
+
+/* Gradient active nav */
+.header__nav-link.is-active {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bot-char-desc avatar glow */
+.bot-char-desc__av {
+  box-shadow: 0 0 0 2px rgba(36,85,245,.2), var(--sh-sm) !important;
+}
+
+/* Pain bridge text */
+.pain-bridge strong { color: var(--blue); }
+
+/* Pricing calc match highlight pulse */
+.pricing-card--match:not(.pricing-card--featured) {
+  box-shadow: var(--glow-card) !important;
+}
+
+/* How decoration tint on dark */
+.how-decoration { color: rgba(160,190,255,.5) !important; opacity: .12 !important; }
+
+/* Pain decoration on light */
+.pain-decoration { opacity: .45 !important; }
+
+
+/* ============================================================
+   PREFERS-REDUCED-MOTION overrides
+============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .hero__glow--1, .hero__glow--2 { animation: none !important; }
+}
